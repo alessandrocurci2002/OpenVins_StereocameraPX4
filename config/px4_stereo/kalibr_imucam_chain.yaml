@@ -1,0 +1,37 @@
+%YAML:1.0
+
+
+cam0:
+  T_cam_imu:
+    - [ 0.0, -1.0,  0.0, -0.0375  ]
+    - [ 0.0,  0.0, -1.0,  0.26078 ]
+    - [ 1.0,  0.0,  0.0, -0.13233 ]
+    - [ 0.0,  0.0,  0.0,  1.0     ]
+  cam_overlaps: []
+  camera_model: pinhole
+  distortion_coeffs: [0, 0, 0, 0]
+  distortion_model: radtan
+  intrinsics:  [432.49, 432.49, 320, 240]
+  resolution: [640, 480]
+  rostopic: /world/baylands/model/x500_depth_0/link/camera_link/sensor/left_camera/image
+  timeshift_cam_imu: 0
+
+
+
+
+cam1:
+  T_cam_imu:
+    - [ 0.0, -1.0,  0.0,  0.0375  ]
+    - [ 0.0,  0.0, -1.0,  0.26078 ]
+    - [ 1.0,  0.0,  0.0, -0.13233 ]
+    - [ 0.0,  0.0,  0.0,  1.0     ]
+  cam_overlaps: []
+  camera_model: pinhole
+  distortion_coeffs: [0, 0, 0, 0]
+  distortion_model: radtan
+  intrinsics: [432.49, 432.49, 320, 240]
+  resolution: [640, 480]
+  rostopic: /world/baylands/model/x500_depth_0/link/camera_link/sensor/right_camera/image
+  timeshift_cam_imu: 0
+
+
