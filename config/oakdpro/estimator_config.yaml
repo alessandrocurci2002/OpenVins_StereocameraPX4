@@ -107,7 +107,7 @@ up_aruco_sigma_px: 1
 up_aruco_chi2_multipler: 1
 
 # masks for our images
-use_mask: true
+use_mask: false
 mask0: "mask_t265_cam0.png" #relative to current file
 mask1: "mask_t265_cam1.png" #relative to current file
 

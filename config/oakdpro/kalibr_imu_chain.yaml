@@ -10,12 +10,12 @@ imu0:
   # Inflated values (to account for unmodelled effects)
   #  - white noise multiplied by 5
   #  - bias random walk multiplied by 10
-  accelerometer_noise_density: 0.07621662815411885 #
-  accelerometer_random_walk: 6.0938774064804115e-05 #
-  gyroscope_noise_density: 0.4806399941444397 #
-  gyroscope_random_walk: 0.06944062188267708 #
+  accelerometer_noise_density: 0.08520021289587021 #
+  accelerometer_random_walk: 0.00010064709204016253 #
+  gyroscope_noise_density: 0.5860219597816467 #
+  gyroscope_random_walk: 0.09815000742673874 #
 
-  rostopic: /camera/camera/imu
+  rostopic: /oak/imu/data
   time_offset: 0.0
   update_rate: 200
   # three different modes supported:
@@ -27,18 +27,25 @@ imu0:
   #   - Ta is imu0:accelerometers:M:
   #   - R_IMUtoACC not used by Kalibr
   #   - Tg is imu0:gyroscopes:A:
+  
   Tw:
-    - [ 1.0, 0.0, 0.0 ]
-    - [ 0.0, 1.0, 0.0 ]
-    - [ 0.0, 0.0, 1.0 ]
+    - [1.0293357372283936, 0.003413811791688204, -0.0005788658163510263]
+    - [0.00854512583464384, 1.024127721786499, 0.05603477358818054]
+    - [-0.0023661276791244745, -0.059192899614572525, 1.0127842426300049]
+
+# Tw updated 
+  
   R_IMUtoGYRO:
     - [ 1.0, 0.0, 0.0 ]
     - [ 0.0, 1.0, 0.0 ]
     - [ 0.0, 0.0, 1.0 ]
+  
   Ta:
-    - [ 1.0, 0.0, 0.0 ]
-    - [ 0.0, 1.0, 0.0 ]
-    - [ 0.0, 0.0, 1.0 ]
+    - [1.0020594596862793, -0.010343948379158974, 0.0006519795279018581]
+    - [0.03246571868658066, 0.9890738725662231, 0.036885861307382584]
+    - [-0.03052872233092785, -0.03846918046474457, 0.9983358979225159]
+
+  #Ta updated
   R_IMUtoACC:
     - [ 1.0, 0.0, 0.0 ]
     - [ 0.0, 1.0, 0.0 ]
