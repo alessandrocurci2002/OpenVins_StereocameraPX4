@@ -1,0 +1,98 @@
+%YAML:1.0
+
+imu0:
+  T_i_b:
+    - [1.0, 0.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0, 0.0]
+    - [0.0, 0.0, 1.0, 0.0]
+    - [0.0, 0.0, 0.0, 1.0]
+
+  # from the luxonis built in data of the camera: 
+  #dividing by sqrt(200)
+  # accelerometer_noise_density: 0.08520021289587021*0.0707106
+  # accelerometer_random_walk: 0.00010064709204016253*0.0707106
+  # gyroscope_noise_density: 0.5860219597816467*0.0707106
+  # gyroscope_random_walk: 0.09815000742673874*0.0707106
+
+  #dividing by sqrt(31)
+  accelerometer_noise_density: 0.006022459594664195
+  accelerometer_random_walk: 0.000007117282780349031
+  gyroscope_noise_density: 0.04141134055333757
+  gyroscope_random_walk: 0.006936521501009744
+
+  # accelerometer_noise_density: 0.0010816645792955158
+  # accelerometer_random_walk: 0.0000012783004291393198
+  # gyroscope_noise_density: 0.007437688797011652
+  # gyroscope_random_walk: 0.0012458347778391966
+  #
+  # white - x5
+  # walk - x10
+  # accelerometer_noise_density: 0.426001064
+  # accelerometer_random_walk: 0.0010064709204016253
+
+  # gyroscope_noise_density: 2.930109799
+  # gyroscope_random_walk: 0.9815000742673874
+
+  # accelerometer_noise_density: 0.030112297973320975
+  # accelerometer_random_walk: 0.00007117282780349031
+  # gyroscope_noise_density: 0.20705670276668785
+  # gyroscope_random_walk: 0.06936521501009745
+
+  rostopic: '/oak/imu/data'
+  update_rate: 200
+  # three different modes supported:
+  # "calibrated" (same as "kalibr"), "kalibr", "rpng"
+  model: "kalibr"
+  # how to get from Kalibr imu.yaml result file:
+  #   - Tw is imu0:gyroscopes:M:
+  #   - R_IMUtoGYRO: is imu0:gyroscopes:C_gyro_i:
+  #   - Ta is imu0:accelerometers:M:
+  #   - R_IMUtoACC not used by Kalibr
+  #   - Tg is imu0:gyroscopes:A:
+  
+
+  # Tw:
+  #   - [1.0 , 0.0, 0.0]
+  #   - [0.0 , 1.0, 0.0]
+  #   - [0.0 , 0.0, 1.0]
+
+  Tw:
+    - [0.9982589726814628, 0.0, 0.0]
+    - [-0.02137330064218209, 0.9969352459994494, 0.0]
+    - [0.030778677907760774, 0.0017198625410844398, 1.0012464032223867]
+  
+  # R_IMUtoGYRO:
+  #   - [ 1.0, 0.0, 0.0 ]
+  #   - [ 0.0, 1.0, 0.0 ]
+  #   - [ 0.0, 0.0, 1.0 ]
+
+  R_IMUtoGYRO:
+    - [0.9999882423209528, 0.0018177738002219865, -0.004495655487625254]
+    - [-0.0018643519277443145, 0.9999444059880849, -0.010378300681061506]
+    - [0.0044765401530316475, 0.010386560140307866, 0.9999360379327824]
+  
+  # Ta:
+  #   - [1.0 , 0.0, 0.0]
+  #   - [0.0 , 1.0, 0.0]
+  #   - [0.0 , 0.0, 1.0]
+
+  Ta:
+    - [0.9982589726814628, 0.0, 0.0]
+    - [-0.02137330064218209, 0.9969352459994494, 0.0]
+    - [0.030778677907760774, 0.0017198625410844398, 1.0012464032223867]
+  
+  R_IMUtoACC:
+    - [ 1.0, 0.0, 0.0 ]
+    - [ 0.0, 1.0, 0.0 ]
+    - [ 0.0, 0.0, 1.0 ]
+  
+  # Tg:
+  #   - [ 0.0, 0.0, 0.0 ]
+  #   - [ 0.0, 0.0, 0.0 ]
+  #   - [ 0.0, 0.0, 0.0 ]
+
+  Tg:
+    - [8.825705710324884e-05, 1.2888849156035138e-05, 0.0012412530692464934]
+    - [0.00039090341994440435, 0.00038688714780881595, -1.0415804902832036e-05]
+    - [-0.0003035249625591654, -0.0004633556737460314, -0.00018719248984220703]
+   
