@@ -7,6 +7,12 @@ imu0:
     - [0.0, 0.0, 1.0, 0.0]
     - [0.0, 0.0, 0.0, 1.0]
 
+
+  # accelerometer_noise_density: 0.08520021289587021
+  # accelerometer_random_walk: 0.00010064709204016253
+  # gyroscope_noise_density: 0.5860219597816467
+  # gyroscope_random_walk: 0.09815000742673874
+
   # from the luxonis built in data of the camera: 
   #dividing by sqrt(200)
   # accelerometer_noise_density: 0.08520021289587021*0.0707106
@@ -15,16 +21,17 @@ imu0:
   # gyroscope_random_walk: 0.09815000742673874*0.0707106
 
   #dividing by sqrt(31)
-  accelerometer_noise_density: 0.006022459594664195
-  accelerometer_random_walk: 0.000007117282780349031
-  gyroscope_noise_density: 0.04141134055333757
-  gyroscope_random_walk: 0.006936521501009744
+  # accelerometer_noise_density: 0.006022459594664195
+  # accelerometer_random_walk: 0.000007117282780349031
+  # gyroscope_noise_density: 0.04141134055333757
+  # gyroscope_random_walk: 0.006936521501009744
+
 
   # accelerometer_noise_density: 0.0010816645792955158
-  # accelerometer_random_walk: 0.0000012783004291393198
-  # gyroscope_noise_density: 0.007437688797011652
+  # accelerometer_random_walk: 0.000012783004291393198
+  # gyroscope_noise_density: 0.0007437688797011652
   # gyroscope_random_walk: 0.0012458347778391966
-  #
+  
   # white - x5
   # walk - x10
   # accelerometer_noise_density: 0.426001064
@@ -38,8 +45,32 @@ imu0:
   # gyroscope_noise_density: 0.20705670276668785
   # gyroscope_random_walk: 0.06936521501009745
 
+#converging values
+  # accelerometer_noise_density: 0.006022459594664195
+  # accelerometer_random_walk: 0.0000007117282780349031
+  # gyroscope_noise_density: 0.0004141134055333757
+  # gyroscope_random_walk: 0.006936521501009744
+
+
+# values with divided by 60 for accelerom and /(60*180/pi) for gyro
+  accelerometer_noise_density: 0.0012702827
+  accelerometer_random_walk: 0.0000010156
+  gyroscope_noise_density: 0.0001398104
+  gyroscope_random_walk: 0.0000202023
+
+
+
+
+# values taking the mean on the axis, then dividing by 60. for taking into account that they were recorded with a /sqrt(hours) unit of measure
+
+  # accelerometer_noise_density: 0.0012702827
+  # accelerometer_random_walk: 0.0000010156
+  # gyroscope_noise_density: 0.00801066666
+  # gyroscope_random_walk: 0.00115734333
+
+
   rostopic: '/oak/imu/data'
-  update_rate: 200
+  update_rate: 192
   # three different modes supported:
   # "calibrated" (same as "kalibr"), "kalibr", "rpng"
   model: "kalibr"
