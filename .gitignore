@@ -8,3 +8,7 @@ doxgen_generated
 *.swo
 doc
 .vscode
+
+# rosbag
+*.bag
+*.db3
