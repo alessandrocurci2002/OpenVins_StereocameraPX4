@@ -53,20 +53,20 @@ imu0:
 
 
 # values with divided by 60 for accelerom and /(60*180/pi) for gyro
-  accelerometer_noise_density: 0.0012702827
-  accelerometer_random_walk: 0.0000010156
-  gyroscope_noise_density: 0.0001398104
-  gyroscope_random_walk: 0.0000202023
+  # accelerometer_noise_density: 0.0012702827
+  # accelerometer_random_walk: 0.0000010156
+  # gyroscope_noise_density: 0.0001398104
+  # gyroscope_random_walk: 0.0000202023
 
 
 
 
 # values taking the mean on the axis, then dividing by 60. for taking into account that they were recorded with a /sqrt(hours) unit of measure
 
-  # accelerometer_noise_density: 0.0012702827
-  # accelerometer_random_walk: 0.0000010156
-  # gyroscope_noise_density: 0.00801066666
-  # gyroscope_random_walk: 0.00115734333
+  accelerometer_noise_density: 0.0012702827
+  accelerometer_random_walk: 0.0000010156
+  gyroscope_noise_density: 0.00801066666
+  gyroscope_random_walk: 0.00115734333
 
 
   rostopic: '/oak/imu/data'
