@@ -1,6 +1,6 @@
 %YAML:1.0 # need to specify the file type at the top!
 
-verbosity: "DEBUG" # ALL, DEBUG, INFO, WARNING, ERROR, SILENT
+verbosity: "ALL" # ALL, DEBUG, INFO, WARNING, ERROR, SILENT
 
 use_fej: true # if first-estimate Jacobians should be used (enable for good consistency)
 integration: "rk4" # discrete, rk4, analytical (if rk4 or analytical used then analytical covariance propagation is used)
@@ -21,7 +21,7 @@ dt_slam_delay: 1 # delay before initializing (helps with stability from bad init
 
 gravity_mag: 9.81 # magnitude of gravity in this location
 
-feat_rep_msckf: "GLOBAL_3D"
+feat_rep_msckf: "ANCHORED_MSCKF_INVERSE_DEPTH"
 feat_rep_slam: "ANCHORED_MSCKF_INVERSE_DEPTH"
 feat_rep_aruco: "ANCHORED_MSCKF_INVERSE_DEPTH"
 
