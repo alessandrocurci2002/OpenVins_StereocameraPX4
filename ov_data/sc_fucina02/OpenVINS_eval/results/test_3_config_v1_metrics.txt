@@ -1,0 +1,28 @@
+OpenVINS trajectory evaluation — dataset test_3, config config_v1, run_1
+Computed locally (ROS 2 ov_eval console logs in this folder were empty — no
+display/ROS 2 environment available here). Method matches the project's
+"posyaw" alignment (translation + yaw, no scale, least squares over all
+matched poses) per OpenVINS_eval/readme.md.
+
+Input files:
+  ground truth : truths/test_3.txt  (2958 poses)
+  estimate     : algorithms/config_v1/test_3/run_1.txt  (2912 poses)
+  time window  : 2026-09-17 12:15 UTC -> 2026-09-17 12:17 UTC  (98.6 s)
+  matched poses: 2910  (nearest-neighbour, tolerance 20 ms)
+  GT path length (matched span): 10.39 m
+
+Alignment (posyaw, solved over all matched poses):
+  yaw offset   : +79.00 deg
+  xy translation: [-0.026, -0.089] m
+  z translation : +0.262 m
+
+Absolute Trajectory Error (ATE), after alignment:
+  RMSE 3D :   3.89 cm
+  RMSE 2D :   3.76 cm  (horizontal only)
+  mean    :   3.54 cm
+  median  :   3.31 cm
+  std     :   1.61 cm
+  max     :   7.59 cm
+
+Per-axis RMSE:
+  x:   1.64 cm   y:   3.39 cm   z:   0.99 cm
