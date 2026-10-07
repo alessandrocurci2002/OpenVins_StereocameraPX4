@@ -1,0 +1,7 @@
+# Verifica: ripetizione della scelta su cantina_03 + confronto su cantina_02 (NOME ACC_ND ACC_RW GYR_ND GYR_RW [BAG])
+an1e-3_gn1e-4_rep    0.001  0.0002  0.0001  2e-05
+c02_base             0.002  0.0002  0.0008  2e-05  cantina_02/tagslam_cantina02
+c02_an1e-3_gn1e-4    0.001  0.0002  0.0001  2e-05  cantina_02/tagslam_cantina02
+c02_gn_5e-5          0.002  0.0002  5e-05   2e-05  cantina_02/tagslam_cantina02
+c02_an1e-3_gn2e-4    0.001  0.0002  0.0002  2e-05  cantina_02/tagslam_cantina02
+c02_base_rep         0.002  0.0002  0.0008  2e-05  cantina_02/tagslam_cantina02

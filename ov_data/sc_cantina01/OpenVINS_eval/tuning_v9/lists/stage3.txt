@@ -1,0 +1,9 @@
+# Stage 3: dove smette di migliorare + random walk attorno al nuovo ottimo (NOME ACC_ND ACC_RW GYR_ND GYR_RW)
+an1e-3_gn1e-4        0.001    0.0002  0.0001  2e-05
+an5e-4_gn1e-4        0.0005   0.0002  0.0001  2e-05
+an2.5e-4_gn2e-4      0.00025  0.0002  0.0002  2e-05
+gn_5e-5              0.002    0.0002  5e-05   2e-05
+an1e-3_gn2e-4_rw0.5  0.001    0.0001  0.0002  1e-05
+an1e-3_gn2e-4_ar6e-4 0.001    0.0006  0.0002  2e-05
+an1e-3_gn2e-4_gr2e-4 0.001    0.0002  0.0002  0.0002
+an1e-3_gn2e-4_rep    0.001    0.0002  0.0002  2e-05

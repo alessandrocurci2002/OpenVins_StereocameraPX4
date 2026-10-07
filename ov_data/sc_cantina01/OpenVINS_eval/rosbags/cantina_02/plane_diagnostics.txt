@@ -1,0 +1,6 @@
+57257.548 diff:  0.001 opt:  0.001 meas:  0.000 muro_1_tag_0
+57257.548 diff: -0.001 opt: -0.001 meas:  0.000 muro_1_tag_1
+57257.548 diff: -0.000 opt: -0.000 meas:  0.000 muro_1_tag_2
+57257.548 diff:  0.000 opt:  0.000 meas:  0.000 muro_1_tag_3
+57257.548 diff: -0.001 opt: -0.001 meas:  0.000 muro_1_tag_5
+57257.548 diff: -0.000 opt: -0.000 meas:  0.000 muro_1_tag_6

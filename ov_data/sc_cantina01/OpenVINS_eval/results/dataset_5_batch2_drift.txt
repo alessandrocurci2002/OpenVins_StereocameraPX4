@@ -1,0 +1,22 @@
+Drift di ritorno su dataset_5_batch2 (cantina05, 06/10/2026)
+=============================================================
+Fasi (tempi dall'inizio del bag, dal GT TagSLAM; vedi truths/dataset_5_batch2_README.md):
+  A  a riposo                0.0 -  16.6 s
+  sollevamento (init)       ~17  -  28   s
+  B  riappoggiata           28.4 -  41.1 s   (GT: 0.6 cm da A)
+  loop                      ~41  - 387   s
+  C  riposo finale         386.8 - 407.5 s   (GT: 0.2 cm da B)
+
+Posizione = media della posizione IMU stimata da OpenVINS nelle finestre B (29.0-40.5 s) e C (388.0-407.4 s).
+Percorso dei loop (B -> C) stimato da OpenVINS: 89.1 m. GT: 87.2 m sull'intero bag.
+
+                               drift B->C   oriz.   vert.    % loop   origine->C   yaw B->C
+config_v9 (rumori tarati)        37.9 cm   10.9 cm  +36.2 cm  0.43 %    38.3 cm    +5.9 deg
+config_v9 pre-tuning             49.4 cm   11.9 cm  +48.0 cm  0.55 %    50.6 cm    +6.3 deg
+
+ov_eval error_singlerun, allineamento se3 (vedi dataset_5_batch2_config_v9*_error_singlerun_se3.txt):
+                               ATE pos   ATE ori   NEES pos
+config_v9                       13.1 cm   2.22 deg    6.0
+config_v9 pre-tuning            17.5 cm   2.40 deg   10.9
+
+Scala OpenVINS / TagSLAM (stima sim3, solo diagnostica): 1.011

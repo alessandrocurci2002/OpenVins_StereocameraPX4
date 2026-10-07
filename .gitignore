@@ -12,3 +12,7 @@ doc
 # rosbag
 *.bag
 *.db3
+
+# python
+__pycache__/
+*.pyc
