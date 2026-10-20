@@ -1,0 +1,8 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1791150425.342933273] [rosbag2_storage]: Opened database '/root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/cantina_02/tagslam_cantina02/tagslam_cantina02_0.db3' for READ_ONLY.
+[INFO] [1791150425.343023903] [rosbag2_player]: Set rate to 1
+[INFO] [1791150425.350274774] [rosbag2_player]: Adding keyboard callbacks.
+[INFO] [1791150425.350342140] [rosbag2_player]: Press SPACE for Pause/Resume
+[INFO] [1791150425.350357425] [rosbag2_player]: Press CURSOR_RIGHT for Play Next Message
+[INFO] [1791150425.350369505] [rosbag2_player]: Press CURSOR_UP for Increase Rate 10%
+[INFO] [1791150425.350381145] [rosbag2_player]: Press CURSOR_DOWN for Decrease Rate 10%
+[INFO] [1791150425.350895322] [rosbag2_storage]: Opened database '/root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/cantina_02/tagslam_cantina02/tagslam_cantina02_0.db3' for READ_ONLY.

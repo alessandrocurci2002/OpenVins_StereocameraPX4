@@ -1,0 +1,20 @@
+cam0:
+  camera_model: pinhole
+  distortion_coeffs: [-0.0076233519570338935, -0.0026557069530887645, -0.0008795023429080058, -0.00016680927611684287]
+  distortion_model: radtan
+  intrinsics: [401.608628861003, 399.428391132301, 319.7343936841441, 190.34744354361882]
+  resolution: [640, 400]
+  rostopic: /oak/left/annotated_images
+  tagtopic: /oak/left/detector/tags
+  rig_body: rig
+#  timeshift_cam_imu: 0.00478308376665382
+cam1:
+  camera_model: pinhole
+  distortion_coeffs: [-0.0127486230660343, 0.009669430813801899, -0.0005299371877853309, 0.00021110128372654215]
+  distortion_model: radtan
+  intrinsics: [402.27012127979714, 400.2659622399602, 320.98190171333647, 190.80434036162683]
+  resolution: [640, 400]
+  rostopic: /oak/right/annotated_images
+  tagtopic: /oak/right/detector/tags
+  rig_body: rig
+#  timeshift_cam_imu: 0.005060284378311684

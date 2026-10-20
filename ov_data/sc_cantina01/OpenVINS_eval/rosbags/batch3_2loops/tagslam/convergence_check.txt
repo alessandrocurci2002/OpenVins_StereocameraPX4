@@ -1,0 +1,10 @@
+frame nel bag di detection: 4172  pose in out.bag: 4171  (100.0%)
+intervallo: 1791386755.036 -> 1791386901.341 s (146.3 s), dal primo frame +0.000 s, fino all'ultimo -0.033 s
+buchi > 0.1 s: 1  (dt max 7.334 s)
+salto tra pose consecutive: p50 0.75 cm, p99 1.46 cm, max 234.96 cm; rotazione p99 0.90 deg, max 64.66 deg
+salti sospetti (> 5 cm o > 3 deg): 1
+velocita' p95 0.39 m/s, max 1.00 m/s; percorso 29.5 m
+errore per frame (time_diagnostics): media 4.75, p95 15.38, max 185.98
+sigma posa (covarianza TagSLAM): pos p50 4.5 mm, max 13.4 mm; rot p50 0.684 deg
+tag_diagnostics (id, |dpos| m, dpos xyz, ang deg, ...):
+  0  0.001  -0.000  -0.000   0.001   ang: 0.183  -0.000   0.003  -0.000

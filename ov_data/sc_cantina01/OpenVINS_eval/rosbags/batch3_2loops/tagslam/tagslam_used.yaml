@@ -1,0 +1,152 @@
+tagslam_parameters:
+  # Use iSAM2 with graph-error checks. With corrected geometry this avoids
+  # the cost of a full optimization after every frame.
+  optimizer_mode: fast
+  # Was 35: it dropped every tag seen at 25-35 deg. A NEW tag seen only that
+  # obliquely never gets initialized, and every later frame that sees it fails
+  # "could not initialize subgraph" -> 0.3-1.3 s holes in the trajectory.
+  # Flip-prone oblique views are still rejected by the ambiguity check
+  # (ambiguity_angle_threshold 60 deg / max_ambiguity_ratio 0.3, defaults).
+  minimum_viewing_angle: 15.0
+  minimum_tag_area: 100
+  max_num_incremental_opt: 100
+  pixel_noise: 1.0
+  max_subgraph_error: 50.0
+  subgraph_abs_prior_position_noise: 0.1
+  subgraph_abs_prior_rotation_noise: 0.1
+  use_approximate_sync: true
+
+# All detections in this bag have hamming distance zero.
+max_hamming_distance: 0
+amnesia: false
+
+# Planes, world frame = tag 0 frame (x right, y up, z out of muro_1 into the room).
+# Written as coordinate_measurements on all 4 corners of each tag because
+# plane_measurements in this TagSLAM build keeps only the LAST plane
+# (src/measurements/plane.cpp assigns factors_ instead of appending).
+#   muro_1   : z = 0      (tag 4 is NOT on this wall: it sits on a box at the far end)
+#   muro_2   : x = -3.75  (estimated from the bag -> replace with tape measurement)
+#   pavimento: y = -1.22  (estimated from the bag: height of tag 0 centre above floor)
+coordinate_measurements:
+  # muro_1: direction . corner = 0.000
+  - muro_1_t0_c0: {tag: 0, corner: 0, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t0_c1: {tag: 0, corner: 1, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t0_c2: {tag: 0, corner: 2, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t0_c3: {tag: 0, corner: 3, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t1_c0: {tag: 1, corner: 0, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t1_c1: {tag: 1, corner: 1, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t1_c2: {tag: 1, corner: 2, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t1_c3: {tag: 1, corner: 3, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t2_c0: {tag: 2, corner: 0, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t2_c1: {tag: 2, corner: 1, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t2_c2: {tag: 2, corner: 2, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t2_c3: {tag: 2, corner: 3, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t3_c0: {tag: 3, corner: 0, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t3_c1: {tag: 3, corner: 1, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t3_c2: {tag: 3, corner: 2, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t3_c3: {tag: 3, corner: 3, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t5_c0: {tag: 5, corner: 0, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t5_c1: {tag: 5, corner: 1, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t5_c2: {tag: 5, corner: 2, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t5_c3: {tag: 5, corner: 3, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t6_c0: {tag: 6, corner: 0, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t6_c1: {tag: 6, corner: 1, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t6_c2: {tag: 6, corner: 2, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  - muro_1_t6_c3: {tag: 6, corner: 3, length: 0.000, direction: [0, 0, 1], noise: 0.020}
+  # # muro_2: direction . corner = -3.750
+  # - muro_2_t8_c0: {tag: 8, corner: 0, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t8_c1: {tag: 8, corner: 1, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t8_c2: {tag: 8, corner: 2, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t8_c3: {tag: 8, corner: 3, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t12_c0: {tag: 12, corner: 0, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t12_c1: {tag: 12, corner: 1, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t12_c2: {tag: 12, corner: 2, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t12_c3: {tag: 12, corner: 3, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t13_c0: {tag: 13, corner: 0, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t13_c1: {tag: 13, corner: 1, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t13_c2: {tag: 13, corner: 2, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t13_c3: {tag: 13, corner: 3, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t14_c0: {tag: 14, corner: 0, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t14_c1: {tag: 14, corner: 1, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t14_c2: {tag: 14, corner: 2, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t14_c3: {tag: 14, corner: 3, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t15_c0: {tag: 15, corner: 0, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t15_c1: {tag: 15, corner: 1, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t15_c2: {tag: 15, corner: 2, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t15_c3: {tag: 15, corner: 3, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t16_c0: {tag: 16, corner: 0, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t16_c1: {tag: 16, corner: 1, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t16_c2: {tag: 16, corner: 2, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # - muro_2_t16_c3: {tag: 16, corner: 3, length: -3.750, direction: [1, 0, 0], noise: 0.100}
+  # # pavimento: direction . corner = -1.220
+  # - pavimento_t30_c0: {tag: 30, corner: 0, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t30_c1: {tag: 30, corner: 1, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t30_c2: {tag: 30, corner: 2, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t30_c3: {tag: 30, corner: 3, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t33_c0: {tag: 33, corner: 0, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t33_c1: {tag: 33, corner: 1, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t33_c2: {tag: 33, corner: 2, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t33_c3: {tag: 33, corner: 3, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t34_c0: {tag: 34, corner: 0, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t34_c1: {tag: 34, corner: 1, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t34_c2: {tag: 34, corner: 2, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t34_c3: {tag: 34, corner: 3, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t35_c0: {tag: 35, corner: 0, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t35_c1: {tag: 35, corner: 1, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t35_c2: {tag: 35, corner: 2, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t35_c3: {tag: 35, corner: 3, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t38_c0: {tag: 38, corner: 0, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t38_c1: {tag: 38, corner: 1, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t38_c2: {tag: 38, corner: 2, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t38_c3: {tag: 38, corner: 3, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t39_c0: {tag: 39, corner: 0, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t39_c1: {tag: 39, corner: 1, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t39_c2: {tag: 39, corner: 2, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t39_c3: {tag: 39, corner: 3, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t40_c0: {tag: 40, corner: 0, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t40_c1: {tag: 40, corner: 1, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t40_c2: {tag: 40, corner: 2, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+  # - pavimento_t40_c3: {tag: 40, corner: 3, length: -1.220, direction: [0, 1, 0], noise: 0.100}
+
+# single plane -> plane_measurements is fine (the "last plane only" bug needs 2+ planes)
+# plane_measurements:
+#   - muro_1:
+#       tags: [0, 1, 2, 3, 5, 6]
+#       distance: 0.0
+#       direction: [0, 0, 1]
+#       noise: 0.001
+
+body_defaults:
+  position_noise: 0.05
+  rotation_noise: 0.01
+
+default_body: lab
+bodies:
+  - lab:
+      is_static: true
+      default_tag_size: 0.165
+      pose:
+        position: {x: 0.0, y: 0.0, z: 0.0}
+        rotation: {x: 0.0, y: 0.0, z: 0.0}
+        position_noise: {x: 0.0001, y: 0.0001, z: 0.0001}
+        rotation_noise: {x: 0.00001, y: 0.00001, z: 0.00001}
+      type: simple
+      tags:
+        - id: 0
+          size: 0.165
+          pose:
+            position: {x: 0.0, y: 0.0, z: 0.0}
+            rotation: {x: 0.0, y: 0.0, z: 0.0}
+            position_noise: {x: 0.001, y: 0.001, z: 0.001}
+            rotation_noise: {x: 0.001, y: 0.001, z: 0.001}
+  - rig:
+      is_static: false
+      type: simple
+      odom_frame_id: body_rig
+      publish_covariance: true
+      # Zero-motion prior between consecutive frames (30 Hz). In the batch
+      # solution it only penalizes frame-to-frame acceleration, so it removes
+      # the zigzag without lagging the motion (poses move < 2 mm at p95).
+      # Typical motion here is 7-15 mm and ~0.4 deg per frame.
+      fake_odom_translation_noise: 0.015
+      fake_odom_rotation_noise: 0.03

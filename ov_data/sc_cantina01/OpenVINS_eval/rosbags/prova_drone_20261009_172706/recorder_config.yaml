@@ -1,0 +1,92 @@
+# Configuration of vio_recorder (see ../README.md).
+# Not a ROS parameter file: the node reads it directly from the path given in
+# its `config_path` parameter (`make record` passes RECORDER_CONFIG).
+
+# The bag is created as <output_dir>/<bag_prefix>_<YYYYmmdd_HHMMSS>/, with a
+# copy of this file inside. This directory is mounted from the host (bags
+# survive the container) and git-ignored.
+output_dir: /root/colcon_ws/src/vio_recorder/recordings
+bag_prefix: rec
+
+max_duration_s: 0          # 0 = record until Ctrl+C
+min_free_space_mb: 1000    # stop before the disk fills up: the two rectified
+                           # 640x400 images at 30 fps are ~0.9 GB per minute
+status_period_s: 5         # how often the per-topic rates are printed
+discovery_timeout_s: 10    # after this, topics whose type is given below are
+                           # subscribed even if no publisher was found yet
+max_cache_size_mb: 2000    # rosbag2 write cache (written to disk by its own thread).
+                           # Large because the SD card is slower than the images
+                           # (~10 vs ~15 MB/s) and stalls for seconds: the cache
+                           # absorbs both for a few minutes. Uses up to twice this
+                           # in RAM (double buffer); Ctrl+C waits until it is on disk
+max_bagfile_size_mb: 0     # 0 = a single .db3 file; > 0 splits the bag
+
+# QoS of the subscriptions. auto = reliable only if every publisher of the
+# topic is reliable, otherwise best effort (what `ros2 bag record` does).
+default_qos: auto
+default_depth: 10
+
+# enabled: false skips a topic without deleting the entry. `type` is optional:
+# when a publisher is found, its type is used. `qos` (auto | reliable |
+# best_effort) and `depth` override the defaults above for a single topic.
+topics:
+  # --- VIO
+  - name: /odomimu                             # OpenVINS output
+    type: nav_msgs/msg/Odometry
+    enabled: true
+  - name: /fmu/in/vehicle_visual_odometry      # what the bridge sends to PX4
+    type: px4_msgs/msg/VehicleOdometry
+    enabled: true
+
+  # --- PX4 attitude
+  - name: /fmu/out/vehicle_attitude
+    type: px4_msgs/msg/VehicleAttitude
+    enabled: true
+
+  # --- PX4 full vehicle state
+  - name: /fmu/out/vehicle_odometry            # EKF2: position, attitude, velocity, angular rate
+    type: px4_msgs/msg/VehicleOdometry
+    enabled: true
+  - name: /fmu/out/vehicle_local_position_v1   # EKF2 local position/velocity and validity flags
+    type: px4_msgs/msg/VehicleLocalPosition
+    enabled: true
+  - name: /fmu/out/vehicle_global_position
+    type: px4_msgs/msg/VehicleGlobalPosition
+    enabled: true
+  - name: /fmu/out/sensor_combined             # raw gyro and accelerometer of the Pixhawk
+    type: px4_msgs/msg/SensorCombined
+    enabled: true
+  - name: /fmu/out/estimator_status_flags      # aiding sources EKF2 is fusing (cs_ev_*, ...)
+    type: px4_msgs/msg/EstimatorStatusFlags
+    enabled: true
+  - name: /fmu/out/vehicle_status_v1           # arming, navigation state, failsafe
+    type: px4_msgs/msg/VehicleStatus
+    enabled: true
+  - name: /fmu/out/vehicle_control_mode
+    type: px4_msgs/msg/VehicleControlMode
+    enabled: true
+  - name: /fmu/out/vehicle_land_detected
+    type: px4_msgs/msg/VehicleLandDetected
+    enabled: true
+  - name: /fmu/out/failsafe_flags
+    type: px4_msgs/msg/FailsafeFlags
+    enabled: true
+  - name: /fmu/out/battery_status_v1
+    type: px4_msgs/msg/BatteryStatus
+    enabled: true
+  - name: /fmu/out/timesync_status             # agent <-> PX4 clock offset
+    type: px4_msgs/msg/TimesyncStatus
+    enabled: true
+  - name: /fmu/out/vehicle_gps_position        # no GNSS indoors; type taken from the publisher
+    enabled: false
+
+  # --- OAK-D Pro
+  - name: /oak/left/image_rect                 # ~0.45 GB per minute
+    type: sensor_msgs/msg/Image
+    enabled: true
+  - name: /oak/right/image_rect                # ~0.45 GB per minute
+    type: sensor_msgs/msg/Image
+    enabled: true
+  - name: /oak/imu/data                        # with the images, lets OpenVINS be re-run offline on the bag
+    type: sensor_msgs/msg/Imu
+    enabled: true
