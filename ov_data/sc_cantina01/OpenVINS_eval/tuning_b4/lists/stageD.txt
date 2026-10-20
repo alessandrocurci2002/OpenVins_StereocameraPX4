@@ -1,0 +1,7 @@
+d_slam batch_4_2loops_motor_on/rec_20261009_091521 1.0
+d_an09_feat batch_4_2loops_motor_on/rec_20261009_091521 1.0
+e6_l_v9 batch_4_2loops_6dof_motor_on_sshdownload 1.0
+e6_l_n_meas batch_4_2loops_6dof_motor_on_sshdownload 1.0
+e6_b_feat batch_4_2loops_6dof_motor_on_sshdownload 1.0
+e6_c_feat_an12 batch_4_2loops_6dof_motor_on_sshdownload 1.0
+e6_c_feat_gn075 batch_4_2loops_6dof_motor_on_sshdownload 1.0

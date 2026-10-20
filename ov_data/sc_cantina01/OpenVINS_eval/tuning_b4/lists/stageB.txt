@@ -1,0 +1,8 @@
+b_an03 batch_4_2loops_motor_on/rec_20261009_091521 0.5
+b_an12 batch_4_2loops_motor_on/rec_20261009_091521 0.5
+b_gn075 batch_4_2loops_motor_on/rec_20261009_091521 0.5
+b_gn3 batch_4_2loops_motor_on/rec_20261009_091521 0.5
+b_rw10 batch_4_2loops_motor_on/rec_20261009_091521 0.5
+b_feat batch_4_2loops_motor_on/rec_20261009_091521 0.5
+b_v9_feat batch_4_2loops_motor_on/rec_20261009_091521 0.5
+b_v9_feat2 batch_4_2loops_motor_on/rec_20261009_091521 0.5

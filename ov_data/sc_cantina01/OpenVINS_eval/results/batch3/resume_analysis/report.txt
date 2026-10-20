@@ -1,0 +1,81 @@
+===================== 2loops (rec_20261007_152554), durata 146.4 s
+Buchi (> soglia) per topic [s dall'inizio del bag]:
+  /odomimu                                22100 msg  52.0->53.2 (1.2), 84.6->98.0 (13.4)
+  /oak/imu/data                           27834 msg  90.7->98.0 (7.3)
+  /oak/left/image_rect                     4174 msg  90.7->98.0 (7.3)
+  /fmu/in/vehicle_visual_odometry         22095 msg  52.0->53.3 (1.2), 84.6->98.0 (13.4)
+  /fmu/out/vehicle_odometry               13917 msg  90.7->98.0 (7.3)
+  /fmu/out/vehicle_local_position_v1       6958 msg  90.7->98.0 (7.3)
+  /fmu/out/estimator_status_flags           144 msg  89.9->98.9 (9.1)
+Bridge: 22095 msg contro 22100 /odomimu; reset_counter unici [0], quality unici [0]
+EKF2, flag (valori assunti nel bag): cs_ev_pos=[False], cs_ev_vel=[False], cs_ev_yaw=[False], cs_ev_hgt=[False], cs_opt_flow=[True], cs_rng_hgt=[False, True], cs_baro_hgt=[True], cs_inertial_dead_reckoning=[False]
+EKF2, rigetti: reject_hor_vel=[False], reject_ver_vel=[False], reject_hor_pos=[False], reject_ver_pos=[False], reject_yaw=[False], reject_optflow_x=[False], reject_optflow_y=[False]
+EKF2, cambi di flag: 11.0s cs_rng_hgt->False, 11.2s cs_rng_hgt->True, 122.3s cs_rng_hgt->False, 122.4s cs_rng_hgt->True
+EKF2 local_position: xy_valid [True], v_xy_valid [True], dead_reckoning [False], xy_reset_counter 3->3, vxy_reset_counter 4->4
+  |v| EKF2 mediana 0.15 m/s, max 0.65 m/s;  |v| /odomimu mediana 16.20, max 180.9 m/s
+--- interruzione /odomimu 52.0 -> 53.2 s (1.2 s)
+    IMU OAK registrata nel buco: si;  messaggi del bridge nel buco: 1
+    prima  [-2, 0] s: OV |v|   0.30 (max    0.4) m/s, sigma p   12.0 cm, sigma ori  1.11 deg, sigma v  0.006 m/s | bridge sigma p   12.0 cm, sigma v  0.006 | EKF2 |v|  0.23 (max  0.33), eph  0.90 m, evh  0.08 m/s
+    dopo   [0, 2] s: OV |v|   1.09 (max    2.0) m/s, sigma p   13.1 cm, sigma ori  1.13 deg, sigma v  0.024 m/s | bridge sigma p   13.1 cm, sigma v  0.024 | EKF2 |v|  0.16 (max  0.24), eph  0.91 m, evh  0.08 m/s
+    dopo   [2, 10] s: OV |v|   5.17 (max    8.6) m/s, sigma p   39.9 cm, sigma ori  1.13 deg, sigma v  0.111 m/s | bridge sigma p   39.9 cm, sigma v  0.111 | EKF2 |v|  0.20 (max  0.32), eph  0.93 m, evh  0.08 m/s
+    dopo   [10, 30] s: OV |v|  17.62 (max   27.2) m/s, sigma p  374.3 cm, sigma ori  1.13 deg, sigma v  0.393 m/s | bridge sigma p  374.3 cm, sigma v  0.393 | EKF2 |v|  0.17 (max  0.31), eph  0.98 m, evh  0.08 m/s
+    alla ripresa: header.stamp di /odomimu avanza di 1.19 s, quello del bridge di 1.18 s (nessun messaggio arretrato inviato dopo il buco se ~ durata del buco)
+--- interruzione /odomimu 84.6 -> 98.0 s (13.4 s)
+    IMU OAK registrata nel buco: si;  messaggi del bridge nel buco: 3
+    prima  [-2, 0] s: OV |v|  27.49 (max   28.3) m/s, sigma p  908.0 cm, sigma ori  1.10 deg, sigma v  0.660 m/s | bridge sigma p  907.3 cm, sigma v  0.660 | EKF2 |v|  0.18 (max  0.24), eph  1.02 m, evh  0.09 m/s
+    dopo   [0, 2] s: OV |v|  42.76 (max   44.7) m/s, sigma p 2099.3 cm, sigma ori  1.01 deg, sigma v  1.026 m/s | bridge sigma p 2099.3 cm, sigma v  1.026 | EKF2 |v|  0.16 (max  0.32), eph  1.07 m, evh  0.08 m/s
+    dopo   [2, 10] s: OV |v|  55.29 (max   67.2) m/s, sigma p 2571.7 cm, sigma ori  1.15 deg, sigma v  1.288 m/s | bridge sigma p 2571.7 cm, sigma v  1.288 | EKF2 |v|  0.13 (max  0.23), eph  1.08 m, evh  0.08 m/s
+    dopo   [10, 30] s: OV |v|  99.93 (max  135.0) m/s, sigma p 4631.4 cm, sigma ori  1.23 deg, sigma v  2.268 m/s | bridge sigma p 4630.4 cm, sigma v  2.268 | EKF2 |v|  0.16 (max  0.31), eph  1.13 m, evh  0.08 m/s
+    alla ripresa: header.stamp di /odomimu avanza di 13.36 s, quello del bridge di 13.37 s (nessun messaggio arretrato inviato dopo il buco se ~ durata del buco)
+Divergenza OV online (|v| > 2 m/s): dal 55.3 s (14363 msg)
+  durante la divergenza: sigma v mediana 1.357 m/s, |v|/sigma_v mediano 44, sigma p mediana 2692.4 cm
+
+===================== hover (rec_20261007_153315), durata 48.3 s
+Buchi (> soglia) per topic [s dall'inizio del bag]:
+  /odomimu                                 6822 msg  nessuno
+  /oak/imu/data                            9660 msg  nessuno
+  /oak/left/image_rect                     1450 msg  nessuno
+  /fmu/in/vehicle_visual_odometry          6821 msg  nessuno
+  /fmu/out/vehicle_odometry                4839 msg  nessuno
+  /fmu/out/vehicle_local_position_v1       2419 msg  nessuno
+  /fmu/out/estimator_status_flags            51 msg  nessuno
+Bridge: 6821 msg contro 6822 /odomimu; reset_counter unici [0], quality unici [0]
+EKF2, flag (valori assunti nel bag): cs_ev_pos=[False], cs_ev_vel=[False], cs_ev_yaw=[False], cs_ev_hgt=[False], cs_opt_flow=[True], cs_rng_hgt=[False, True], cs_baro_hgt=[True], cs_inertial_dead_reckoning=[False]
+EKF2, rigetti: reject_hor_vel=[False], reject_ver_vel=[False], reject_hor_pos=[False], reject_ver_pos=[False], reject_yaw=[False], reject_optflow_x=[False], reject_optflow_y=[False]
+EKF2, cambi di flag: 9.5s cs_rng_hgt->False, 9.5s cs_rng_hgt->True
+EKF2 local_position: xy_valid [True], v_xy_valid [True], dead_reckoning [False], xy_reset_counter 3->3, vxy_reset_counter 4->4
+  |v| EKF2 mediana 0.00 m/s, max 0.32 m/s;  |v| /odomimu mediana 0.00, max 0.3 m/s
+Divergenza OV online (|v| > 2 m/s): mai
+
+===================== 6dof (rec_20261007_153538), durata 114.3 s
+Buchi (> soglia) per topic [s dall'inizio del bag]:
+  /odomimu                                14123 msg  82.1->102.8 (20.7), 104.3->104.7 (0.4)
+  /oak/imu/data                           19037 msg  84.3->102.8 (18.5), 104.3->104.7 (0.4)
+  /oak/left/image_rect                     2884 msg  84.3->102.8 (18.5), 104.3->104.7 (0.5)
+  /fmu/in/vehicle_visual_odometry         14122 msg  82.1->102.8 (20.7), 104.3->104.7 (0.4)
+  /fmu/out/vehicle_odometry                9566 msg  84.3->102.8 (18.5), 104.3->104.7 (0.4)
+  /fmu/out/vehicle_local_position_v1       4794 msg  84.3->102.8 (18.5), 104.3->104.7 (0.4)
+  /fmu/out/estimator_status_flags           107 msg  83.5->102.8 (19.3)
+Bridge: 14122 msg contro 14123 /odomimu; reset_counter unici [0], quality unici [0]
+EKF2, flag (valori assunti nel bag): cs_ev_pos=[False], cs_ev_vel=[False], cs_ev_yaw=[False], cs_ev_hgt=[False], cs_opt_flow=[True], cs_rng_hgt=[False, True], cs_baro_hgt=[True], cs_inertial_dead_reckoning=[False]
+EKF2, rigetti: reject_hor_vel=[False], reject_ver_vel=[False], reject_hor_pos=[False], reject_ver_pos=[False], reject_yaw=[False], reject_optflow_x=[False], reject_optflow_y=[False]
+EKF2, cambi di flag: 6.7s cs_rng_hgt->False, 6.7s cs_rng_hgt->True
+EKF2 local_position: xy_valid [True], v_xy_valid [True], dead_reckoning [False], xy_reset_counter 3->3, vxy_reset_counter 4->4
+  |v| EKF2 mediana 0.07 m/s, max 0.38 m/s;  |v| /odomimu mediana 0.13, max 32.2 m/s
+--- interruzione /odomimu 82.1 -> 102.8 s (20.7 s)
+    IMU OAK registrata nel buco: si;  messaggi del bridge nel buco: 1
+    prima  [-2, 0] s: OV |v|   0.03 (max    0.1) m/s, sigma p    9.0 cm, sigma ori  1.14 deg, sigma v  0.002 m/s | bridge sigma p    9.0 cm, sigma v  0.002 | EKF2 |v|  0.04 (max  0.07), eph  1.46 m, evh  0.09 m/s
+    dopo   [0, 2] s: OV |v|  21.33 (max   23.1) m/s, sigma p  369.1 cm, sigma ori  1.15 deg, sigma v  0.473 m/s | bridge sigma p  369.3 cm, sigma v  0.473 | EKF2 |v|  0.00 (max  0.01), eph  1.49 m, evh  0.03 m/s
+    dopo   [2, 10] s: OV |v|  27.70 (max   32.2) m/s, sigma p  570.1 cm, sigma ori  1.15 deg, sigma v  0.618 m/s | bridge sigma p  570.3 cm, sigma v  0.618 | EKF2 |v|  0.00 (max  0.01), eph  1.49 m, evh  0.03 m/s
+    dopo   [10, 30] s: OV |v|    nan (max    nan) m/s, sigma p    nan cm, sigma ori   nan deg, sigma v    nan m/s | bridge sigma p    nan cm, sigma v    nan | EKF2 |v|  0.00 (max  0.00), eph  1.50 m, evh  0.03 m/s
+    alla ripresa: header.stamp di /odomimu avanza di 21.00 s, quello del bridge di 21.00 s (nessun messaggio arretrato inviato dopo il buco se ~ durata del buco)
+--- interruzione /odomimu 104.3 -> 104.7 s (0.4 s)
+    IMU OAK registrata nel buco: no;  messaggi del bridge nel buco: 2
+    prima  [-2, 0] s: OV |v|  21.28 (max   22.3) m/s, sigma p  367.9 cm, sigma ori  1.15 deg, sigma v  0.472 m/s | bridge sigma p  367.7 cm, sigma v  0.472 | EKF2 |v|  0.00 (max  0.01), eph  1.49 m, evh  0.03 m/s
+    dopo   [0, 2] s: OV |v|  24.80 (max   26.5) m/s, sigma p  472.1 cm, sigma ori  1.15 deg, sigma v  0.551 m/s | bridge sigma p  472.3 cm, sigma v  0.551 | EKF2 |v|  0.00 (max  0.00), eph  1.49 m, evh  0.03 m/s
+    dopo   [2, 10] s: OV |v|  29.39 (max   32.2) m/s, sigma p  632.3 cm, sigma ori  1.15 deg, sigma v  0.657 m/s | bridge sigma p  632.3 cm, sigma v  0.657 | EKF2 |v|  0.00 (max  0.01), eph  1.49 m, evh  0.03 m/s
+    dopo   [10, 30] s: OV |v|    nan (max    nan) m/s, sigma p    nan cm, sigma ori   nan deg, sigma v    nan m/s | bridge sigma p    nan cm, sigma v    nan | EKF2 |v|   nan (max   nan), eph   nan m, evh   nan m/s
+    alla ripresa: header.stamp di /odomimu avanza di 0.39 s, quello del bridge di 0.40 s (nessun messaggio arretrato inviato dopo il buco se ~ durata del buco)
+Divergenza OV online (|v| > 2 m/s): dal 102.8 s (1310 msg)
+  durante la divergenza: sigma v mediana 0.592 m/s, |v|/sigma_v mediano 45, sigma p mediana 531.1 cm
+

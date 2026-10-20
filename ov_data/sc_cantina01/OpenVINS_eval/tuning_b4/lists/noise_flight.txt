@@ -1,0 +1,9 @@
+fl_P1_f300 prova_drone_20261009_172706_recovered 1.0
+fl_P2_f200 prova_drone_20261009_172706_recovered 1.0
+fl_P2_f300 prova_drone_20261009_172706_recovered 1.0
+fl_P3_f200 prova_drone_20261009_172706_recovered 1.0
+fl_P3_f300 prova_drone_20261009_172706_recovered 1.0
+fl_P2lo_f200 prova_drone_20261009_172706_recovered 1.0
+fl_P2lo_f300 prova_drone_20261009_172706_recovered 1.0
+fl_P2hi_f200 prova_drone_20261009_172706_recovered 1.0
+fl_P2hi_f300 prova_drone_20261009_172706_recovered 1.0

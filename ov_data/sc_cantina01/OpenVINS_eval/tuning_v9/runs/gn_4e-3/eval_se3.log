@@ -1,0 +1,25 @@
+Setting printing level to: INFO
+======================================
+Absolute Trajectory Error
+======================================
+rmse_ori = 1.435 | rmse_pos = 0.200
+mean_ori = 1.374 | mean_pos = 0.189
+min_ori  = 0.523 | min_pos  = 0.063
+max_ori  = 3.101 | max_pos  = 0.402
+std_ori  = 0.413 | std_pos  = 0.064
+======================================
+Relative Pose Error
+======================================
+seg 8 - median_ori = 0.793 | median_pos = 0.278 (5090 samples)
+seg 16 - median_ori = 0.845 | median_pos = 0.123 (4490 samples)
+seg 24 - median_ori = 0.948 | median_pos = 0.309 (3410 samples)
+seg 32 - median_ori = 0.964 | median_pos = 0.208 (3017 samples)
+seg 40 - median_ori = 0.870 | median_pos = 0.346 (2624 samples)
+======================================
+Normalized Estimation Error Squared
+======================================
+mean_ori = 62.520 | mean_pos = 12.445
+min_ori  = 1.166 | min_pos  = 1.485
+max_ori  = 910.842 | max_pos  = 60.795
+std_ori  = 86.796 | std_pos  = 8.247
+======================================

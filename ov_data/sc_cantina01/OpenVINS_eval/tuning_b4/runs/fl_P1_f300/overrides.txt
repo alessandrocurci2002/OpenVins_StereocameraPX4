@@ -1,0 +1,1 @@
+init_window_time=2.0 accelerometer_noise_density=0.026 accelerometer_random_walk=0.002 gyroscope_noise_density=0.0036 gyroscope_random_walk=0.0002 num_pts=300 max_msckf_in_update=80 max_slam=75

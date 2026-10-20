@@ -1,0 +1,4 @@
+l_v9 batch_4_2loops_motor_on/rec_20261009_091521
+l_n_meas batch_4_2loops_motor_on/rec_20261009_091521
+l_n_mid batch_4_2loops_motor_on/rec_20261009_091521
+l_n_meas_rw10 batch_4_2loops_motor_on/rec_20261009_091521

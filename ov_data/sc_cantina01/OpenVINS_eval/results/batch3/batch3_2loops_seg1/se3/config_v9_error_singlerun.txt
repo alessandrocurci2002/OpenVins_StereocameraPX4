@@ -1,0 +1,31 @@
+Setting printing level to: INFO
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg1/se3/config_v9/error_singlerun_01_relative_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg1/se3/config_v9/error_singlerun_02_relative_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg1/se3/config_v9/error_singlerun_03_normalized_estimation_error_squared.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg1/se3/config_v9/error_singlerun_04_imu_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg1/se3/config_v9/error_singlerun_05_imu_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg1/se3/config_v9/error_singlerun_06_global_orientation_rpy_error.png
+======================================
+Absolute Trajectory Error
+======================================
+rmse_ori = 0.939 | rmse_pos = 0.051
+mean_ori = 0.838 | mean_pos = 0.048
+min_ori  = 0.143 | min_pos  = 0.019
+max_ori  = 3.552 | max_pos  = 0.160
+std_ori  = 0.423 | std_pos  = 0.018
+======================================
+Relative Pose Error
+======================================
+seg 2 - median_ori = 0.701 | median_pos = 0.022 (2283 samples)
+seg 4 - median_ori = 0.984 | median_pos = 0.045 (2039 samples)
+seg 6.1 - median_ori = 0.933 | median_pos = 0.064 (1835 samples)
+seg 8.1 - median_ori = 0.930 | median_pos = 0.066 (1657 samples)
+seg 10 - median_ori = 0.783 | median_pos = 0.083 (1458 samples)
+======================================
+Normalized Estimation Error Squared
+======================================
+mean_ori = 356.469 | mean_pos = 0.947
+min_ori  = 0.158 | min_pos  = 0.140
+max_ori  = 4485.628 | max_pos  = 6.714
+std_ori  = 555.347 | std_pos  = 0.746
+======================================

@@ -1,0 +1,34 @@
+Setting printing level to: INFO
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_full/se3/ekf2/error_singlerun_01_relative_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_full/se3/ekf2/error_singlerun_02_relative_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_full/se3/ekf2/error_singlerun_03_imu_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_full/se3/ekf2/error_singlerun_04_imu_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_full/se3/ekf2/error_singlerun_05_global_orientation_rpy_error.png
+[33m[TRAJ]: Trajectory is a bad ratio of 0.70 length (est 20.61, gt 29.46)
+[33m[TRAJ]: algorithms/ekf2/batch3_2loops_full/run_1.txt
+======================================
+Absolute Trajectory Error
+======================================
+rmse_ori = 5.838 | rmse_pos = 0.896
+mean_ori = 5.376 | mean_pos = 0.829
+min_ori  = 0.545 | min_pos  = 0.310
+max_ori  = 11.427 | max_pos  = 1.570
+std_ori  = 2.277 | std_pos  = 0.342
+======================================
+Relative Pose Error
+======================================
+seg 2.9 - median_ori = 2.792 | median_pos = 1.117 (3132 samples)
+seg 5.9 - median_ori = 4.524 | median_pos = 1.723 (2823 samples)
+seg 8.8 - median_ori = 3.606 | median_pos = 1.927 (2581 samples)
+seg 12 - median_ori = 4.261 | median_pos = 0.864 (2355 samples)
+seg 15 - median_ori = 5.240 | median_pos = 0.386 (2047 samples)
+[33m[TRAJ]: Normalized Estimation Error Squared called but trajectory does not have any covariances...
+[0m[33m[TRAJ]: Did you record using a Odometry or PoseWithCovarianceStamped????
+[0m======================================
+Normalized Estimation Error Squared
+======================================
+mean_ori = 0.000 | mean_pos = 0.000
+min_ori  = 0.000 | min_pos  = 0.000
+max_ori  = 0.000 | max_pos  = 0.000
+std_ori  = 0.000 | std_pos  = 0.000
+======================================

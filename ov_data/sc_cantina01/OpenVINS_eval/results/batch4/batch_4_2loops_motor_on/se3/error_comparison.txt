@@ -1,0 +1,26 @@
+Setting printing level to: INFO
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch4/batch_4_2loops_motor_on/se3/comparison/error_comparison_01_relative_orientation_error.png
+[COMP]: 5282 poses in batch_4_2loops_motor_on.txt => length of 29.52 meters
+[33m[TRAJ]: Trajectory is a bad ratio of 0.81 length (est 23.87, gt 29.52)
+[33m[TRAJ]: /tmp/ovcmp_b4/batch_4_2loops_motor_on/algorithms/ekf2/batch_4_2loops_motor_on/run_1.txt
+============================================
+ATE LATEX TABLE
+============================================
+ & \textbf{batch\_4\_2loops\_motor\_on} & \textbf{Average} \\\hline
+config\_b4 & 0.908 / 0.028 & 0.908 / 0.028 \\
+ekf2 & 7.654 / 0.806 & 7.654 / 0.806 \\
+============================================
+============================================
+ATE 2D LATEX TABLE
+============================================
+ & \textbf{batch\_4\_2loops\_motor\_on} & \textbf{Average} \\\hline
+config\_b4 & 0.621 / 0.022 & 0.621 / 0.022 \\
+ekf2 & 3.669 / 0.303 & 3.669 / 0.303 \\
+============================================
+============================================
+RPE LATEX TABLE
+============================================
+ & \textbf{3m} & \textbf{5.9m} & \textbf{8.9m} & \textbf{12m} & \textbf{15m} \\\hline
+config\_b4 & 0.764 / 0.026 & 1.015 / 0.040 & 1.078 / 0.049 & 1.025 / 0.045 & 0.986 / 0.028 \\
+ekf2 & 2.366 / 0.913 & 3.367 / 1.389 & 3.417 / 1.529 & 3.025 / 0.821 & 3.549 / 0.491 \\
+============================================

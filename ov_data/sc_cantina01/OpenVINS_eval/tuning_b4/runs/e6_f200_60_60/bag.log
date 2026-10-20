@@ -1,0 +1,3 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1791551484.612606787] [rosbag2_storage]: Opened database '/root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch_4_2loops_6dof_motor_on_sshdownload/rec_20261009_092302_0.db3' for READ_ONLY.
+[INFO] [1791551484.612692843] [rosbag2_player]: Set rate to 1
+[INFO] [1791551484.617173690] [rosbag2_storage]: Opened database '/root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch_4_2loops_6dof_motor_on_sshdownload/rec_20261009_092302_0.db3' for READ_ONLY.

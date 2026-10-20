@@ -1,0 +1,54 @@
+[OK] 3860/3860 pose convertite in: /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_2loops/converted/config_v9.txt
+     covarianza: si (diagonale, da /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_2loops/Openvins_config_v9/ov_estimate_std.txt)
+     frame:      cam0
+     range temporale: 1791386765.439 -> 1791386901.374 s
+[OK] 13917 pose EKF2 -> /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_2loops/converted/ekf2.txt (1791386755.005 -> 1791386901.467 s, reset_counter [9])
+     R_B_C (body FRD -> cam0) come RPY ZYX: [82.84  0.25 90.88] deg, braccio p_B_C = [0. 0. 0.] m, offset PX4-OAK -3.0 ms
+[OK] 22100 pose /odomimu -> /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_2loops/converted/openvins_rpi_online.txt (1791386765.514 -> 1791386896.020 s, frame {('global', 'imu')})
+[OK] 1173/1173 pose convertite in: /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_hover/converted/config_v9.txt
+     covarianza: si (diagonale, da /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_hover/Openvins_config_v9/ov_estimate_std.txt)
+     frame:      cam0
+     range temporale: 1791387205.751 -> 1791387244.813 s
+[OK] 4839 pose EKF2 -> /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_hover/converted/ekf2.txt (1791387196.538 -> 1791387244.918 s, reset_counter [9])
+     R_B_C (body FRD -> cam0) come RPY ZYX: [82.84  0.25 90.88] deg, braccio p_B_C = [0. 0. 0.] m, offset PX4-OAK -3.0 ms
+[OK] 6822 pose /odomimu -> /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_hover/converted/openvins_rpi_online.txt (1791387205.896 -> 1791387244.897 s, frame {('global', 'imu')})
+[OK] 2745/2745 pose convertite in: /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_6dof/converted/config_v9.txt
+     covarianza: si (diagonale, da /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_6dof/Openvins_config_v9/ov_estimate_std.txt)
+     frame:      cam0
+     range temporale: 1791387343.620 -> 1791387453.321 s
+[OK] 9566 pose EKF2 -> /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_6dof/converted/ekf2.txt (1791387339.044 -> 1791387453.416 s, reset_counter [9])
+     R_B_C (body FRD -> cam0) come RPY ZYX: [82.84  0.25 90.88] deg, braccio p_B_C = [0. 0. 0.] m, offset PX4-OAK -3.0 ms
+[OK] 14123 pose /odomimu -> /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/rosbags/batch3_6dof/converted/openvins_rpi_online.txt (1791387343.696 -> 1791387449.138 s, frame {('global', 'imu')})
+verticale nel mondo del tag 0: [-0.0095   0.99994 -0.00494], inclinazione 0.61 deg, dispersione max 1.95 deg
+=== batch3_hover: -0.0-48.2 s, 1448 pose GT, percorso 0.67 m
+=== batch3_6dof_seg1: -0.1-84.2 s, 2528 pose GT, percorso 9.54 m
+=== batch3_2loops_seg0: -0.0-52.0 s, 1561 pose GT, percorso 9.05 m
+=== batch3_2loops_seg1: -0.0-90.6 s, 2719 pose GT, percorso 20.18 m
+=== batch3_2loops_full: -0.0-146.3 s, 4171 pose GT, percorso 29.46 m
+=== batch3_6dof_full: -0.1-114.2 s, 2881 pose GT, percorso 10.87 m
+  batch3_hover         se3ori config_v9            ATE pos 0.006 m, ori 0.14 deg, NEES pos 0.013
+  batch3_hover         se3ori openvins_rpi_online  ATE pos 0.006 m, ori 0.20 deg, NEES pos nan
+  batch3_hover         se3ori ekf2                 ATE pos 0.272 m, ori 0.10 deg, NEES pos nan
+  batch3_hover         se3    config_v9            ATE pos 0.004 m, ori 14.25 deg, NEES pos 0.007
+  batch3_hover         se3    openvins_rpi_online  ATE pos 0.005 m, ori 15.65 deg, NEES pos nan
+  batch3_hover         se3    ekf2                 ATE pos 0.269 m, ori 52.83 deg, NEES pos nan
+  batch3_6dof_seg1     se3ori config_v9            ATE pos 0.014 m, ori 0.68 deg, NEES pos 0.078
+  batch3_6dof_seg1     se3ori openvins_rpi_online  ATE pos 0.026 m, ori 0.78 deg, NEES pos nan
+  batch3_6dof_seg1     se3ori ekf2                 ATE pos 0.268 m, ori 0.59 deg, NEES pos nan
+  batch3_6dof_seg1     se3    config_v9            ATE pos 0.014 m, ori 0.79 deg, NEES pos 0.076
+  batch3_6dof_seg1     se3    openvins_rpi_online  ATE pos 0.025 m, ori 1.43 deg, NEES pos nan
+  batch3_6dof_seg1     se3    ekf2                 ATE pos 0.233 m, ori 25.24 deg, NEES pos nan
+  batch3_2loops_seg0   se3ori config_v9            ATE pos 0.039 m, ori 0.91 deg, NEES pos 0.51
+  batch3_2loops_seg0   se3ori openvins_rpi_online  ATE pos 0.041 m, ori 0.91 deg, NEES pos nan
+  batch3_2loops_seg0   se3ori ekf2                 ATE pos 0.707 m, ori 2.75 deg, NEES pos nan
+  batch3_2loops_seg0   se3    config_v9            ATE pos 0.032 m, ori 1.38 deg, NEES pos 0.333
+  batch3_2loops_seg0   se3    openvins_rpi_online  ATE pos 0.032 m, ori 1.43 deg, NEES pos nan
+  batch3_2loops_seg0   se3    ekf2                 ATE pos 0.704 m, ori 4.70 deg, NEES pos nan
+  batch3_2loops_seg1   se3ori config_v9            ATE pos 0.053 m, ori 0.84 deg, NEES pos 1.014
+  batch3_2loops_seg1   se3ori ekf2                 ATE pos 0.865 m, ori 2.72 deg, NEES pos nan
+  batch3_2loops_seg1   se3    config_v9            ATE pos 0.051 m, ori 0.94 deg, NEES pos 0.947
+  batch3_2loops_seg1   se3    ekf2                 ATE pos 0.860 m, ori 4.63 deg, NEES pos nan
+  batch3_2loops_full   se3ori ekf2                 ATE pos 0.905 m, ori 2.84 deg, NEES pos nan
+  batch3_2loops_full   se3    ekf2                 ATE pos 0.896 m, ori 5.84 deg, NEES pos nan
+  batch3_6dof_full     se3ori ekf2                 ATE pos 0.293 m, ori 0.58 deg, NEES pos nan
+  batch3_6dof_full     se3    ekf2                 ATE pos 0.274 m, ori 25.31 deg, NEES pos nan

@@ -1,0 +1,200 @@
+bag rosbags/prova_drone_20261009_172706_recovered
+OAK 18714 campioni (200 Hz), PX4 9351 (100 Hz)
+
+== static_disarmed  [1.0, 7.0] s (6.0 s), segnale grezzo OAK
+  acc [m/s^2]
+    sigma per campione (200 Hz)      0.01433  0.01274  0.01755   -> sigma*sqrt(dt) = 0.001061
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.001281  0.001026  0.001442   rms 0.001261
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.001124  0.001167  0.00154   rms 0.001291
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.00106  0.0011  0.001753   rms 0.001343
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  nan  nan  nan   rms nan
+    densita' PSD 0.5-15 Hz             0.001233  0.001004  0.001533   rms 0.001275
+    fit Allan N                        0.00113  0.001028  0.001428
+    fit Allan B (instab. bias)         0  0.001306  0.002766
+    fit Allan K (random walk)          0  0  0   (tau max 0.5 s)
+    picchi spettro residuo [Hz]       7.2, 49.0, 15.2
+  gyro [rad/s]
+    sigma per campione (200 Hz)      0.002526  0.003187  0.002526   -> sigma*sqrt(dt) = 0.0001954
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.0001723  0.0002045  0.0001469   rms 0.0001761
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.0001746  0.0002374  0.0001492   rms 0.0001907
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.0001318  0.0002318  0.0001409   rms 0.0001741
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  nan  nan  nan   rms nan
+    densita' PSD 0.5-15 Hz             0.0001736  0.0002053  0.0001212   rms 0.0001703
+    fit Allan N                        0.0001564  0.0002165  0.0001469
+    fit Allan B (instab. bias)         0  7.132e-05  0
+    fit Allan K (random walk)          0  0.0005047  0   (tau max 0.5 s)
+    picchi spettro residuo [Hz]       55.2, 76.0, 81.6
+
+== rest_disarmed  [1.0, 7.0] s (6.0 s), residuo OAK - Pixhawk: lag +3.0 ms (corr 0.050), R_BI stimata a 151.08 deg da px4_oak_calib.yaml; |w| medio 0.00 rad/s; coerenza residuo-moto 0.5-5 Hz acc 1.00 1.00 1.00, gyro 1.00 1.00 1.00
+  acc [m/s^2]
+    sigma per campione (100 Hz)      0.01203  0.01205  0.01412   -> sigma*sqrt(dt) = 0.001277
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.001568  0.001457  0.001749   rms 0.001596
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.00141  0.001779  0.001695   rms 0.001635
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.001142  0.001493  0.002007   rms 0.001588
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  nan  nan  nan   rms nan
+    densita' PSD 0.5-15 Hz             0.001475  0.001543  0.001927   rms 0.00166
+    fit Allan N                        0.001226  0.001166  0.001382
+    fit Allan B (instab. bias)         0  0.002862  0.003795
+    fit Allan K (random walk)          0  0  0   (tau max 0.5 s)
+    picchi spettro residuo [Hz]       4.0, 3.2, 2.0
+  gyro [rad/s]
+    sigma per campione (100 Hz)      0.001488  0.001849  0.00128   -> sigma*sqrt(dt) = 0.0001557
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.0001822  0.0001987  0.0001412   rms 0.0001757
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.0001778  0.0002211  0.0001611   rms 0.0001883
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.000155  0.0002409  0.0001405   rms 0.0001842
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  nan  nan  nan   rms nan
+    densita' PSD 0.5-15 Hz             0.0001795  0.0002033  0.0001309   rms 0.0001739
+    fit Allan N                        0.0001542  0.0001772  0.0001357
+    fit Allan B (instab. bias)         0.00015  0.0004816  7.281e-05
+    fit Allan K (random walk)          0  0  0   (tau max 0.5 s)
+    picchi spettro residuo [Hz]       0.2, 0.4, 26.6
+
+== armed_ground  [7.5, 10.9] s (3.4 s), residuo OAK - Pixhawk: lag -2.0 ms (corr 0.952), R_BI stimata a 33.76 deg da px4_oak_calib.yaml; |w| medio 0.01 rad/s; coerenza residuo-moto 0.5-5 Hz acc 1.00 1.00 1.00, gyro 1.00 1.00 1.00
+  acc [m/s^2]
+    sigma per campione (100 Hz)      0.1548  0.1966  0.1311   -> sigma*sqrt(dt) = 0.01631
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.0172  0.02205  0.0158   rms 0.01855
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.0128  0.01804  0.0107   rms 0.01419
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  nan  nan  nan   rms nan
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  nan  nan  nan   rms nan
+    densita' PSD 0.5-15 Hz             0.01242  0.01688  0.01003   rms 0.01341
+    fit Allan N                        0.01209  0.01839  0.01086
+    fit Allan B (instab. bias)         0  0  0
+    fit Allan K (random walk)          0  0.0871  0   (tau max 0.3 s)
+    picchi spettro residuo [Hz]       24.2, 22.4, 22.1
+  gyro [rad/s]
+    sigma per campione (100 Hz)      0.003762  0.005253  0.005182   -> sigma*sqrt(dt) = 0.0004782
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.0004197  0.0007251  0.0003847   rms 0.0005323
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.0002373  0.0003164  0.0002751   rms 0.0002782
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  nan  nan  nan   rms nan
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  nan  nan  nan   rms nan
+    densita' PSD 0.5-15 Hz             0.000266  0.0002871  0.0002332   rms 0.000263
+    fit Allan N                        0.0002823  0.0003495  0.0002961
+    fit Allan B (instab. bias)         0  0  0
+    fit Allan K (random walk)          0  0  0   (tau max 0.3 s)
+    picchi spettro residuo [Hz]       21.5, 21.1, 21.8
+  spostamento medio residuo vs rest_disarmed: acc -0.031  -0.005  -0.007 m/s^2, gyro +0.0002  -0.0000  -0.0001 rad/s
+
+== flight  [14.0, 93.0] s (79.0 s), residuo OAK - Pixhawk: lag -2.0 ms (corr 0.980), R_BI stimata a 0.19 deg da px4_oak_calib.yaml; |w| medio 0.09 rad/s; coerenza residuo-moto 0.5-5 Hz acc 0.47 0.31 0.30, gyro 0.31 0.44 0.17
+  acc [m/s^2]
+    sigma per campione (100 Hz)      3.757  1.945  3.016   -> sigma*sqrt(dt) = 0.3
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.4276  0.232  0.3283   rms 0.3388
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.6613  0.3059  0.5283   rms 0.5196
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.6811  0.29  0.5768   rms 0.5418
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  0.7136  0.3149  0.545   rms 0.5494
+    densita' PSD 0.5-15 Hz             0.5545  0.2739  0.447   rms 0.4405
+    fit Allan N                        0.3415  0.2  0.2695
+    fit Allan B (instab. bias)         0.5401  0.2164  0.4437
+    fit Allan K (random walk)          0  0  0   (tau max 7.1 s)
+    picchi spettro residuo [Hz]       2.0, 3.0, 2.8
+  gyro [rad/s]
+    sigma per campione (100 Hz)      0.01557  0.01515  0.03389   -> sigma*sqrt(dt) = 0.002324
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.001756  0.001773  0.003905   rms 0.002675
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.001871  0.002583  0.006161   rms 0.004005
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.001641  0.00246  0.005961   rms 0.003842
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  0.00131  0.002634  0.00579   rms 0.00375
+    densita' PSD 0.5-15 Hz             0.001801  0.002181  0.004923   rms 0.003278
+    fit Allan N                        0.001525  0.001451  0.003032
+    fit Allan B (instab. bias)         0  0.001861  0.004881
+    fit Allan K (random walk)          0  0  0   (tau max 7.1 s)
+    picchi spettro residuo [Hz]       3.2, 3.0, 2.4
+  spostamento medio residuo vs rest_disarmed: acc +0.102  -0.027  -0.117 m/s^2, gyro +0.0007  -0.0004  -0.0002 rad/s
+
+== f1  [14.0, 34.0] s (20.0 s), residuo OAK - Pixhawk: lag +2.5 ms (corr 0.904), R_BI stimata a 3.82 deg da px4_oak_calib.yaml; |w| medio 0.05 rad/s; coerenza residuo-moto 0.5-5 Hz acc 0.48 0.31 0.38, gyro 0.35 0.68 0.59
+  acc [m/s^2]
+    sigma per campione (100 Hz)      3.867  1.916  3.127   -> sigma*sqrt(dt) = 0.3077
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.4595  0.2384  0.3543   rms 0.3622
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.6423  0.3031  0.5329   rms 0.5126
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.6555  0.2745  0.5788   rms 0.5292
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  0.7474  0.259  0.5571   rms 0.5586
+    densita' PSD 0.5-15 Hz             0.5809  0.2801  0.4819   rms 0.4648
+    fit Allan N                        0.3337  0.1889  0.2649
+    fit Allan B (instab. bias)         1.068  0.254  0.7132
+    fit Allan K (random walk)          0  0  0   (tau max 1.7 s)
+    picchi spettro residuo [Hz]       3.0, 2.8, 3.8
+  gyro [rad/s]
+    sigma per campione (100 Hz)      0.01358  0.01304  0.02948   -> sigma*sqrt(dt) = 0.002019
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.001617  0.001599  0.003341   rms 0.002333
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.001658  0.002152  0.005169   rms 0.003371
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.001573  0.002172  0.005382   rms 0.003472
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  0.001436  0.00259  0.005205   rms 0.003457
+    densita' PSD 0.5-15 Hz             0.001747  0.002021  0.004523   rms 0.003033
+    fit Allan N                        0.001443  0.00112  0.002223
+    fit Allan B (instab. bias)         0.0004789  0.00262  0.008014
+    fit Allan K (random walk)          0  0  0   (tau max 1.7 s)
+    picchi spettro residuo [Hz]       2.8, 2.0, 1.8
+  spostamento medio residuo vs rest_disarmed: acc +0.035  -0.006  +0.076 m/s^2, gyro -0.0000  -0.0004  -0.0029 rad/s
+
+== f2  [34.0, 54.0] s (20.0 s), residuo OAK - Pixhawk: lag -4.5 ms (corr 0.925), R_BI stimata a 0.96 deg da px4_oak_calib.yaml; |w| medio 0.06 rad/s; coerenza residuo-moto 0.5-5 Hz acc 0.45 0.38 0.33, gyro 0.19 0.55 0.38
+  acc [m/s^2]
+    sigma per campione (100 Hz)      3.646  1.928  2.94   -> sigma*sqrt(dt) = 0.2924
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.4099  0.2254  0.3247   rms 0.3287
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.6758  0.3096  0.5052   rms 0.5189
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.6138  0.2794  0.5345   rms 0.4968
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  0.6173  0.2959  0.4933   rms 0.4872
+    densita' PSD 0.5-15 Hz             0.5419  0.2793  0.4278   rms 0.43
+    fit Allan N                        0.3032  0.1847  0.2466
+    fit Allan B (instab. bias)         0.923  0.3877  0.7841
+    fit Allan K (random walk)          0  0  0   (tau max 1.7 s)
+    picchi spettro residuo [Hz]       3.4, 3.2, 2.4
+  gyro [rad/s]
+    sigma per campione (100 Hz)      0.01483  0.01526  0.03272   -> sigma*sqrt(dt) = 0.002253
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.001731  0.00177  0.004036   rms 0.002734
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.001996  0.002817  0.006285   rms 0.00414
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.001628  0.002219  0.005208   rms 0.003401
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  0.001521  0.001707  0.004616   rms 0.002974
+    densita' PSD 0.5-15 Hz             0.002028  0.0023  0.005161   rms 0.003466
+    fit Allan N                        0.001562  0.00141  0.002572
+    fit Allan B (instab. bias)         0.0004546  0.001166  0.003412
+    fit Allan K (random walk)          0  0  0   (tau max 1.7 s)
+    picchi spettro residuo [Hz]       4.2, 3.4, 4.4
+  spostamento medio residuo vs rest_disarmed: acc +0.063  +0.047  -0.121 m/s^2, gyro +0.0010  +0.0000  +0.0008 rad/s
+
+== f3  [54.0, 74.0] s (20.0 s), residuo OAK - Pixhawk: lag +0.5 ms (corr 0.968), R_BI stimata a 0.58 deg da px4_oak_calib.yaml; |w| medio 0.09 rad/s; coerenza residuo-moto 0.5-5 Hz acc 0.45 0.35 0.27, gyro 0.37 0.54 0.32
+  acc [m/s^2]
+    sigma per campione (100 Hz)      3.697  1.905  2.841   -> sigma*sqrt(dt) = 0.2908
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.4166  0.2238  0.2965   rms 0.3223
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.6618  0.3059  0.514   rms 0.515
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.7003  0.2822  0.5664   rms 0.545
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  0.7229  0.4025  0.5383   rms 0.5699
+    densita' PSD 0.5-15 Hz             0.5368  0.2649  0.4063   rms 0.4177
+    fit Allan N                        0.2968  0.1697  0.2321
+    fit Allan B (instab. bias)         1.127  0.5756  0.7607
+    fit Allan K (random walk)          0  0  0   (tau max 1.7 s)
+    picchi spettro residuo [Hz]       3.8, 4.0, 2.8
+  gyro [rad/s]
+    sigma per campione (100 Hz)      0.0151  0.01515  0.03312   -> sigma*sqrt(dt) = 0.002276
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.001786  0.001795  0.003845   rms 0.002658
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.002132  0.002743  0.006652   rms 0.004333
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.001619  0.002108  0.005482   rms 0.003517
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  0.001154  0.002356  0.004818   rms 0.003167
+    densita' PSD 0.5-15 Hz             0.002019  0.002291  0.005032   rms 0.003398
+    fit Allan N                        0.001426  0.001279  0.002494
+    fit Allan B (instab. bias)         0  0.003275  0.007049
+    fit Allan K (random walk)          0  0  0   (tau max 1.7 s)
+    picchi spettro residuo [Hz]       3.0, 4.8, 4.6
+  spostamento medio residuo vs rest_disarmed: acc +0.067  -0.254  -0.264 m/s^2, gyro +0.0011  -0.0015  -0.0004 rad/s
+
+== f4  [74.0, 93.0] s (19.0 s), residuo OAK - Pixhawk: lag -3.0 ms (corr 0.990), R_BI stimata a 0.48 deg da px4_oak_calib.yaml; |w| medio 0.14 rad/s; coerenza residuo-moto 0.5-5 Hz acc 0.54 0.46 0.33, gyro 0.48 0.44 0.32
+  acc [m/s^2]
+    sigma per campione (100 Hz)      3.593  1.885  3.041   -> sigma*sqrt(dt) = 0.2927
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.4028  0.2269  0.3299   rms 0.3279
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.6272  0.2985  0.5373   rms 0.507
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.7384  0.3188  0.6203   rms 0.5864
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  0.6579  0.2688  0.5208   rms 0.5087
+    densita' PSD 0.5-15 Hz             0.5176  0.2704  0.4445   rms 0.4238
+    fit Allan N                        0.2964  0.1853  0.256
+    fit Allan B (instab. bias)         1.013  0.2735  0.7204
+    fit Allan K (random walk)          0  0  0   (tau max 1.7 s)
+    picchi spettro residuo [Hz]       1.2, 5.4, 1.4
+  gyro [rad/s]
+    sigma per campione (100 Hz)      0.01552  0.01461  0.03309   -> sigma*sqrt(dt) = 0.002272
+    N_eff(tau=0.033 s) = sigma_A*sqrt(tau)  0.001794  0.001729  0.003773   rms 0.00261
+    N_eff(tau=0.100 s) = sigma_A*sqrt(tau)  0.001707  0.002348  0.005997   rms 0.003847
+    N_eff(tau=0.330 s) = sigma_A*sqrt(tau)  0.001789  0.003154  0.00691   rms 0.004505
+    N_eff(tau=1.000 s) = sigma_A*sqrt(tau)  0.001048  0.002882  0.004793   rms 0.003285
+    densita' PSD 0.5-15 Hz             0.00171  0.002161  0.004954   rms 0.003273
+    fit Allan N                        0.001376  0.001197  0.002744
+    fit Allan B (instab. bias)         0  0.004291  0.005716
+    fit Allan K (random walk)          0  0  0   (tau max 1.7 s)
+    picchi spettro residuo [Hz]       1.2, 1.0, 1.4
+  spostamento medio residuo vs rest_disarmed: acc +0.226  +0.115  -0.183 m/s^2, gyro +0.0008  +0.0001  +0.0024 rad/s

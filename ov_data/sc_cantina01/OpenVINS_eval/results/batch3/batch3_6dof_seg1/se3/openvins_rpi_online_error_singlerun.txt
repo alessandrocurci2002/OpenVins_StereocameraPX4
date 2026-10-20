@@ -1,0 +1,32 @@
+Setting printing level to: INFO
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_6dof_seg1/se3/openvins_rpi_online/error_singlerun_01_relative_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_6dof_seg1/se3/openvins_rpi_online/error_singlerun_02_relative_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_6dof_seg1/se3/openvins_rpi_online/error_singlerun_03_imu_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_6dof_seg1/se3/openvins_rpi_online/error_singlerun_04_imu_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_6dof_seg1/se3/openvins_rpi_online/error_singlerun_05_global_orientation_rpy_error.png
+======================================
+Absolute Trajectory Error
+======================================
+rmse_ori = 1.432 | rmse_pos = 0.025
+mean_ori = 1.384 | mean_pos = 0.022
+min_ori  = 0.513 | min_pos  = 0.001
+max_ori  = 2.307 | max_pos  = 0.071
+std_ori  = 0.368 | std_pos  = 0.010
+======================================
+Relative Pose Error
+======================================
+seg 0.95 - median_ori = 0.586 | median_pos = 0.017 (1954 samples)
+seg 1.9 - median_ori = 0.813 | median_pos = 0.023 (1753 samples)
+seg 2.9 - median_ori = 0.972 | median_pos = 0.025 (1561 samples)
+seg 3.8 - median_ori = 0.948 | median_pos = 0.030 (1443 samples)
+seg 4.8 - median_ori = 0.865 | median_pos = 0.032 (1293 samples)
+[33m[TRAJ]: Normalized Estimation Error Squared called but trajectory does not have any covariances...
+[0m[33m[TRAJ]: Did you record using a Odometry or PoseWithCovarianceStamped????
+[0m======================================
+Normalized Estimation Error Squared
+======================================
+mean_ori = 0.000 | mean_pos = 0.000
+min_ori  = 0.000 | min_pos  = 0.000
+max_ori  = 0.000 | max_pos  = 0.000
+std_ori  = 0.000 | std_pos  = 0.000
+======================================

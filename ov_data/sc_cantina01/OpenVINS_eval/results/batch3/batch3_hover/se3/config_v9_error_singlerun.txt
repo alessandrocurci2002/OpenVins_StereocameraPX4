@@ -1,0 +1,33 @@
+Setting printing level to: INFO
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_hover/se3/config_v9/error_singlerun_01_relative_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_hover/se3/config_v9/error_singlerun_02_relative_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_hover/se3/config_v9/error_singlerun_03_normalized_estimation_error_squared.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_hover/se3/config_v9/error_singlerun_04_imu_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_hover/se3/config_v9/error_singlerun_05_imu_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_hover/se3/config_v9/error_singlerun_06_global_orientation_rpy_error.png
+[33m[TRAJ]: Trajectory is a bad ratio of 0.55 length (est 0.37, gt 0.67)
+[33m[TRAJ]: algorithms/config_v9/batch3_hover/run_1.txt
+======================================
+Absolute Trajectory Error
+======================================
+rmse_ori = 14.249 | rmse_pos = 0.004
+mean_ori = 14.249 | mean_pos = 0.003
+min_ori  = 14.083 | min_pos  = 0.000
+max_ori  = 14.678 | max_pos  = 0.027
+std_ori  = 0.051 | std_pos  = 0.003
+======================================
+Relative Pose Error
+======================================
+seg 0.067 - median_ori = 0.064 | median_pos = 0.002 (1172 samples)
+seg 0.13 - median_ori = 0.076 | median_pos = 0.002 (1172 samples)
+seg 0.2 - median_ori = 0.097 | median_pos = 0.002 (1172 samples)
+seg 0.27 - median_ori = 0.097 | median_pos = 0.002 (1172 samples)
+seg 0.34 - median_ori = 0.097 | median_pos = 0.002 (1172 samples)
+======================================
+Normalized Estimation Error Squared
+======================================
+mean_ori = 6631.063 | mean_pos = 0.007
+min_ori  = 2011.584 | min_pos  = 0.000
+max_ori  = 7151.908 | max_pos  = 0.276
+std_ori  = 1017.159 | std_pos  = 0.025
+======================================

@@ -1,0 +1,4 @@
+l_v9_rt batch_4_2loops_motor_on/rec_20261009_091521 1.0
+l_v9_half batch_4_2loops_motor_on/rec_20261009_091521 0.5
+l_n_meas_rt batch_4_2loops_motor_on/rec_20261009_091521 1.0
+l_n_meas_half batch_4_2loops_motor_on/rec_20261009_091521 0.5

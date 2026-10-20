@@ -1,0 +1,33 @@
+Setting printing level to: INFO
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_hover/se3ori/comparison/error_comparison_01_relative_orientation_error.png
+[COMP]: 1448 poses in batch3_hover.txt => length of 0.67 meters
+[33m[TRAJ]: Trajectory is a bad ratio of 0.55 length (est 0.37, gt 0.67)
+[33m[TRAJ]: /tmp/ovcmp/batch3_hover/algorithms/config_v9/batch3_hover/run_1.txt
+[33m[TRAJ]: Trajectory is a bad ratio of 2.56 length (est 1.73, gt 0.67)
+[33m[TRAJ]: /tmp/ovcmp/batch3_hover/algorithms/ekf2/batch3_hover/run_1.txt
+[33m[TRAJ]: Trajectory is a bad ratio of 0.84 length (est 0.57, gt 0.67)
+[33m[TRAJ]: /tmp/ovcmp/batch3_hover/algorithms/openvins_rpi_online/batch3_hover/run_1.txt
+============================================
+ATE LATEX TABLE
+============================================
+ & \textbf{batch3\_hover} & \textbf{Average} \\\hline
+config\_v9 & 0.143 / 0.006 & 0.143 / 0.006 \\
+ekf2 & 0.097 / 0.272 & 0.097 / 0.272 \\
+openvins\_rpi\_online & 0.196 / 0.006 & 0.196 / 0.006 \\
+============================================
+============================================
+ATE 2D LATEX TABLE
+============================================
+ & \textbf{batch3\_hover} & \textbf{Average} \\\hline
+config\_v9 & 0.079 / 0.005 & 0.079 / 0.005 \\
+ekf2 & 0.086 / 0.004 & 0.086 / 0.004 \\
+openvins\_rpi\_online & 0.095 / 0.006 & 0.095 / 0.006 \\
+============================================
+============================================
+RPE LATEX TABLE
+============================================
+ & \textbf{0.067m} & \textbf{0.13m} & \textbf{0.2m} & \textbf{0.27m} & \textbf{0.34m} \\\hline
+config\_v9 & 0.084 / 0.003 & 0.112 / 0.003 & 0.131 / 0.003 & 0.141 / 0.004 & 0.144 / 0.004 \\
+ekf2 & 0.116 / 0.037 & 0.111 / 0.047 & 0.100 / 0.063 & 0.110 / 0.066 & 0.110 / 0.155 \\
+openvins\_rpi\_online & 0.115 / 0.004 & 0.150 / 0.004 & 0.173 / 0.004 & 0.184 / 0.004 & 0.188 / 0.004 \\
+============================================

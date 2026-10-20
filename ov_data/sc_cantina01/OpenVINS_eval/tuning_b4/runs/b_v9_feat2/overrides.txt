@@ -1,0 +1,1 @@
+num_pts=400 max_msckf_in_update=120 max_slam=100 max_slam_in_update=50

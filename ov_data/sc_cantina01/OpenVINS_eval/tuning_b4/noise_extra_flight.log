@@ -1,0 +1,2 @@
+/root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/tuning_b4/run_cfg.sh: line 20: 912413 Killed                  ros2 run ov_msckf run_subscribe_msckf --ros-args -p config_path:="$RUN"/estimator_config.yaml -p save_total_state:=true -p filepath_est:="$RUN"/ov_estimate.txt -p filepath_std:="$RUN"/ov_estimate_std.txt -p filepath_gt:="$RUN"/ov_groundtruth.txt > "$RUN"/openvins.log 2>&1
+[run_list] finito: lists/noise_extra_flight.txt

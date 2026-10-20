@@ -1,0 +1,31 @@
+Setting printing level to: INFO
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg0/se3ori/config_v9/error_singlerun_01_relative_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg0/se3ori/config_v9/error_singlerun_02_relative_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg0/se3ori/config_v9/error_singlerun_03_normalized_estimation_error_squared.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg0/se3ori/config_v9/error_singlerun_04_imu_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg0/se3ori/config_v9/error_singlerun_05_imu_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_seg0/se3ori/config_v9/error_singlerun_06_global_orientation_rpy_error.png
+======================================
+Absolute Trajectory Error
+======================================
+rmse_ori = 0.913 | rmse_pos = 0.039
+mean_ori = 0.797 | mean_pos = 0.034
+min_ori  = 0.181 | min_pos  = 0.009
+max_ori  = 3.417 | max_pos  = 0.154
+std_ori  = 0.445 | std_pos  = 0.020
+======================================
+Relative Pose Error
+======================================
+seg 0.91 - median_ori = 0.626 | median_pos = 0.020 (1208 samples)
+seg 1.8 - median_ori = 0.854 | median_pos = 0.031 (1118 samples)
+seg 2.7 - median_ori = 1.161 | median_pos = 0.040 (1032 samples)
+seg 3.6 - median_ori = 1.257 | median_pos = 0.043 (951 samples)
+seg 4.5 - median_ori = 1.198 | median_pos = 0.041 (846 samples)
+======================================
+Normalized Estimation Error Squared
+======================================
+mean_ori = 105.708 | mean_pos = 0.510
+min_ori  = 0.194 | min_pos  = 0.031
+max_ori  = 1798.245 | max_pos  = 5.892
+std_ori  = 158.121 | std_pos  = 0.651
+======================================

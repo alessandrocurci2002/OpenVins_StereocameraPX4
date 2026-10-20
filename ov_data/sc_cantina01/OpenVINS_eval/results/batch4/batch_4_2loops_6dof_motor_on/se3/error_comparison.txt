@@ -1,0 +1,24 @@
+Setting printing level to: INFO
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch4/batch_4_2loops_6dof_motor_on/se3/comparison/error_comparison_01_relative_orientation_error.png
+[COMP]: 6942 poses in batch_4_2loops_6dof_motor_on.txt => length of 40.12 meters
+============================================
+ATE LATEX TABLE
+============================================
+ & \textbf{batch\_4\_2loops\_6dof\_motor\_on} & \textbf{Average} \\\hline
+config\_b4 & 1.304 / 0.046 & 1.304 / 0.046 \\
+ekf2 & 12.410 / 0.783 & 12.410 / 0.783 \\
+============================================
+============================================
+ATE 2D LATEX TABLE
+============================================
+ & \textbf{batch\_4\_2loops\_6dof\_motor\_on} & \textbf{Average} \\\hline
+config\_b4 & 1.144 / 0.041 & 1.144 / 0.041 \\
+ekf2 & 1.099 / 0.343 & 1.099 / 0.343 \\
+============================================
+============================================
+RPE LATEX TABLE
+============================================
+ & \textbf{4m} & \textbf{8m} & \textbf{12m} & \textbf{16m} & \textbf{20m} \\\hline
+config\_b4 & 0.988 / 0.035 & 1.278 / 0.052 & 1.452 / 0.063 & 1.422 / 0.055 & 1.442 / 0.055 \\
+ekf2 & 2.347 / 0.975 & 3.022 / 1.436 & 2.735 / 1.291 & 1.975 / 0.903 & 1.568 / 0.873 \\
+============================================

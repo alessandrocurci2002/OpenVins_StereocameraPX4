@@ -1,0 +1,31 @@
+Setting printing level to: INFO
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch4/batch_4_2loops_6dof_motor_on/se3ori/config_b4/error_singlerun_01_relative_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch4/batch_4_2loops_6dof_motor_on/se3ori/config_b4/error_singlerun_02_relative_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch4/batch_4_2loops_6dof_motor_on/se3ori/config_b4/error_singlerun_03_normalized_estimation_error_squared.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch4/batch_4_2loops_6dof_motor_on/se3ori/config_b4/error_singlerun_04_imu_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch4/batch_4_2loops_6dof_motor_on/se3ori/config_b4/error_singlerun_05_imu_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch4/batch_4_2loops_6dof_motor_on/se3ori/config_b4/error_singlerun_06_global_orientation_rpy_error.png
+======================================
+Absolute Trajectory Error
+======================================
+rmse_ori = 0.947 | rmse_pos = 0.047
+mean_ori = 0.839 | mean_pos = 0.043
+min_ori  = 0.038 | min_pos  = 0.006
+max_ori  = 2.220 | max_pos  = 0.082
+std_ori  = 0.439 | std_pos  = 0.019
+======================================
+Relative Pose Error
+======================================
+seg 4 - median_ori = 0.869 | median_pos = 0.032 (4809 samples)
+seg 8 - median_ori = 0.958 | median_pos = 0.044 (4364 samples)
+seg 12 - median_ori = 1.348 | median_pos = 0.056 (3989 samples)
+seg 16 - median_ori = 1.355 | median_pos = 0.048 (3522 samples)
+seg 20 - median_ori = 1.358 | median_pos = 0.053 (3104 samples)
+======================================
+Normalized Estimation Error Squared
+======================================
+mean_ori = 26.306 | mean_pos = 0.779
+min_ori  = 0.014 | min_pos  = 0.011
+max_ori  = 328.388 | max_pos  = 2.463
+std_ori  = 43.894 | std_pos  = 0.687
+======================================

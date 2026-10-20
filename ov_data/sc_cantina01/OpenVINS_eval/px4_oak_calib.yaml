@@ -1,0 +1,8 @@
+# Stimato da calib_px4_oak.py (giroscopi PX4 sensor_combined vs OAK /oak/imu/data)
+# bag: rosbags/batch3_6dof/rec_20261007_153538
+time_offset_px4_minus_oak_s: -0.0030
+R_B_I:   # v_body_FRD = R_B_I v_imu_oak
+  - [-0.00792036, -0.13211212, 0.99120314]
+  - [0.99994822, -0.00737951, 0.00700666]
+  - [0.00638893, 0.99120731, 0.13216373]
+rpy_deg_ZYX: [82.405, -0.366, 90.454]

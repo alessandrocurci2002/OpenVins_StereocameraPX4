@@ -1,0 +1,6 @@
+c_feat_gn075 batch_4_2loops_motor_on/rec_20261009_091521 0.5
+c_feat2 batch_4_2loops_motor_on/rec_20261009_091521 0.5
+c_feat_an12 batch_4_2loops_motor_on/rec_20261009_091521 0.5
+c_feat_msckf batch_4_2loops_motor_on/rec_20261009_091521 0.5
+c_feat_pts batch_4_2loops_motor_on/rec_20261009_091521 0.5
+c_feat_rep_q batch_4_2loops_motor_on/rec_20261009_091521 0.25

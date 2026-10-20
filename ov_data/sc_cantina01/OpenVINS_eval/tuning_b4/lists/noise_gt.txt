@@ -1,0 +1,12 @@
+b4n_P0 batch_4_2loops_motor_on/rec_20261009_091521 1.0
+e6n_P0 batch_4_2loops_6dof_motor_on_sshdownload 1.0
+b4n_P2 batch_4_2loops_motor_on/rec_20261009_091521 1.0
+e6n_P2 batch_4_2loops_6dof_motor_on_sshdownload 1.0
+b4n_P3 batch_4_2loops_motor_on/rec_20261009_091521 1.0
+e6n_P3 batch_4_2loops_6dof_motor_on_sshdownload 1.0
+b4n_P2lo batch_4_2loops_motor_on/rec_20261009_091521 1.0
+e6n_P2lo batch_4_2loops_6dof_motor_on_sshdownload 1.0
+b4n_P2hi batch_4_2loops_motor_on/rec_20261009_091521 1.0
+e6n_P2hi batch_4_2loops_6dof_motor_on_sshdownload 1.0
+c3n_P2 cantina_03/tagslam_cantina03 1.0
+c3n_P3 cantina_03/tagslam_cantina03 1.0

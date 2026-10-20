@@ -1,0 +1,5 @@
+Setting printing level to: INFO
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_full/se3ori/trajectories/plot_trajectories_01.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_2loops_full/se3ori/trajectories/plot_trajectories_02.png
+[COMP]: 4171 poses in tagslam_gt => length of 29.46 meters
+[COMP]: 4170 poses in ekf2 => length of 20.59 meters

@@ -1,0 +1,9 @@
+dataset,algo,align,gt_path_m,ate_pos_m,ate_ori_deg,nees_pos,nees_ori,segments_m
+batch_4_2loops_motor_on,config_b4,se3ori,29.52,0.029,0.827,0.289,16.602,3;5.9;8.9;12;15
+batch_4_2loops_motor_on,ekf2,se3ori,29.52,0.821,2.465,,,3;5.9;8.9;12;15
+batch_4_2loops_motor_on,config_b4,se3,29.52,0.028,0.908,0.259,24.079,3;5.9;8.9;12;15
+batch_4_2loops_motor_on,ekf2,se3,29.52,0.806,7.654,,,3;5.9;8.9;12;15
+batch_4_2loops_6dof_motor_on,config_b4,se3ori,40.12,0.047,0.947,0.779,26.306,4;8;12;16;20
+batch_4_2loops_6dof_motor_on,ekf2,se3ori,40.12,0.827,1.721,,,4;8;12;16;20
+batch_4_2loops_6dof_motor_on,config_b4,se3,40.12,0.046,1.304,0.74,32.902,4;8;12;16;20
+batch_4_2loops_6dof_motor_on,ekf2,se3,40.12,0.783,12.41,,,4;8;12;16;20

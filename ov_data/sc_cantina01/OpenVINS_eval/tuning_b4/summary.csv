@@ -1,0 +1,52 @@
+name;status;rows;t_last;v_max;diverge_s;gaps_gt_0.2s;drift_cm;drift_h_cm;drift_v_cm;ate_pos_cm;ate_ori_deg;nees_pos;overrides
+b4_ds;ok;4537;176.1;0.51;None;0;36.2;16.0;32.4;13.3;1.762;5.767;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75 downsample_cameras=true
+b4_tf15;ok;1964;176.0;0.5;None;0;11.3;8.3;7.7;4.7;1.014;0.767;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75 track_frequency=15
+b_an03;ok;4539;176.1;0.57;None;0;21.0;5.7;20.2;7.3;1.61;2.006;accelerometer_noise_density=0.03 gyroscope_noise_density=0.0015
+b_an12;ok;4538;176.1;0.51;None;0;13.7;4.3;13.0;6.7;1.25;1.522;accelerometer_noise_density=0.12 gyroscope_noise_density=0.0015
+b_feat;ok;4537;176.1;0.5;None;0;4.0;3.4;2.1;3.0;0.797;0.295;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75
+b_gn075;ok;4537;176.1;0.51;None;0;12.2;4.7;11.3;5.9;1.096;1.224;accelerometer_noise_density=0.06 gyroscope_noise_density=0.00075
+b_gn3;ok;4537;176.1;0.5;None;0;14.9;6.3;13.5;7.2;1.136;1.769;accelerometer_noise_density=0.06 gyroscope_noise_density=0.003
+b_rw10;ok;4537;176.1;0.51;None;0;13.4;6.2;11.9;6.7;1.206;1.519;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015 accelerometer_random_walk=0.002 gyroscope_random_walk=0.0002
+b_v9_feat;divergente;4537;176.1;5.4;94.6;0;;;;;;;num_pts=300 max_msckf_in_update=80 max_slam=75
+b_v9_feat2;divergente;4538;176.1;2.01;94.7;0;;;;;;;num_pts=400 max_msckf_in_update=120 max_slam=100 max_slam_in_update=50
+c_feat2;ok;4538;176.1;0.5;None;0;10.4;10.3;1.3;5.5;0.935;0.989;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015 num_pts=400 max_msckf_in_update=120 max_slam=100 max_slam_in_update=50
+c_feat_an12;ok;4537;176.1;0.5;None;0;2.7;2.6;0.7;2.6;0.969;0.21;accelerometer_noise_density=0.12 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75
+c_feat_gn075;ok;4537;176.1;0.5;None;0;4.9;3.8;3.1;3.1;0.77;0.337;accelerometer_noise_density=0.06 gyroscope_noise_density=0.00075 num_pts=300 max_msckf_in_update=80 max_slam=75
+c_feat_msckf;ok;4537;176.1;0.5;None;0;13.5;6.4;11.8;6.7;1.185;1.504;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015 max_msckf_in_update=80
+c_feat_pts;ok;4537;176.1;0.5;None;0;11.8;9.8;6.7;5.5;0.903;1.029;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015 num_pts=300
+c_feat_rep_q;ok;4537;176.1;0.5;None;0;4.0;3.4;2.1;3.0;0.797;0.295;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75
+d_an09_feat;ok;4537;176.1;0.5;None;0;3.3;2.7;1.8;2.8;0.908;0.259;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75
+d_slam;ok;4537;176.1;0.5;None;0;15.6;8.8;12.9;7.1;1.231;1.721;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015 max_slam=75
+e6_b4_ds;ok;6267;231.4;0.85;None;0;55.2;30.6;45.9;19.0;3.677;11.92;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75 downsample_cameras=true
+e6_b4_tf15;ok;2710;231.4;0.59;None;0;25.6;22.0;13.1;10.3;1.783;3.535;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75 track_frequency=15
+e6_b_feat;ok;6266;231.4;0.87;None;0;12.4;2.3;12.2;5.0;1.239;0.936;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75
+e6_b_feat_rep;ok;6266;231.4;0.87;None;0;12.4;2.3;12.2;5.0;1.238;0.938;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75
+e6_c_feat_an12;ok;6266;231.4;0.75;None;0;15.2;7.9;13.0;5.3;1.437;0.984;accelerometer_noise_density=0.12 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75
+e6_c_feat_gn075;ok;6266;231.4;0.86;None;0;11.5;1.7;11.4;4.9;1.539;0.886;accelerometer_noise_density=0.06 gyroscope_noise_density=0.00075 num_pts=300 max_msckf_in_update=80 max_slam=75
+e6_d_an09_feat;ok;6267;231.4;0.79;None;0;9.4;2.3;9.1;4.6;1.304;0.74;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=80 max_slam=75
+e6_f100_20_25;ok;6266;231.4;0.88;None;0;15.2;5.8;14.0;6.2;2.374;1.223;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=100 max_msckf_in_update=20 max_slam=25
+e6_f150_30_40;ok;6266;231.4;0.78;None;0;19.5;6.7;18.4;6.7;1.741;1.593;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=150 max_msckf_in_update=30 max_slam=40
+e6_f200_40_50;ok;6266;231.4;0.79;None;0;19.1;2.9;18.9;7.5;1.766;1.947;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=200 max_msckf_in_update=40 max_slam=50
+e6_f200_60_60;ok;6267;231.4;0.8;None;0;17.8;3.9;17.4;6.1;1.612;1.333;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=200 max_msckf_in_update=60 max_slam=60
+e6_f200_80_75;ok;6266;231.4;0.8;None;0;17.0;3.8;16.6;5.8;1.603;1.195;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=200 max_msckf_in_update=80 max_slam=75
+e6_f250_60_60;ok;6266;231.4;0.77;None;0;16.9;3.6;16.5;6.4;1.699;1.482;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=250 max_msckf_in_update=60 max_slam=60
+e6_f300_40_50;ok;6267;231.4;0.8;None;0;17.6;7.2;16.1;6.4;1.256;1.435;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=40 max_slam=50
+e6_f300_60_60;ok;6267;231.4;0.78;None;0;9.4;1.3;9.3;4.2;1.205;0.644;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=60 max_slam=60
+e6_l_n_meas;ok;6267;231.4;0.91;None;0;15.8;2.1;15.6;5.8;1.483;1.222;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015
+e6_l_v9;divergente;6266;231.4;12.4;145.2;0;;;;;;;
+f100_20_25;ok;4538;176.1;0.5;None;0;19.9;11.1;16.4;7.5;1.817;1.898;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=100 max_msckf_in_update=20 max_slam=25
+f150_30_40;ok;4537;176.1;0.5;None;0;20.2;11.9;16.3;8.9;1.534;2.813;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=150 max_msckf_in_update=30 max_slam=40
+f200_40_50;ok;4537;176.1;0.5;None;0;8.6;5.0;7.0;4.8;1.123;0.788;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=200 max_msckf_in_update=40 max_slam=50
+f200_60_60;ok;4537;176.1;0.5;None;0;15.2;7.0;13.6;6.8;1.22;1.595;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=200 max_msckf_in_update=60 max_slam=60
+f200_80_75;ok;4537;176.1;0.5;None;0;15.4;6.7;13.9;6.8;1.23;1.64;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=200 max_msckf_in_update=80 max_slam=75
+f250_60_60;ok;4538;176.1;0.5;None;0;3.8;2.8;2.5;3.2;0.916;0.341;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=250 max_msckf_in_update=60 max_slam=60
+f300_40_50;ok;4537;176.1;0.5;None;0;6.1;6.1;-0.7;3.7;1.162;0.45;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=40 max_slam=50
+f300_60_60;ok;4537;176.1;0.5;None;0;7.5;7.2;2.4;4.4;0.893;0.651;accelerometer_noise_density=0.09 gyroscope_noise_density=0.0015 num_pts=300 max_msckf_in_update=60 max_slam=60
+l_n_meas;divergente;4080;176.1;167.14;99.6;32;;;;;;;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015
+l_n_meas_half;ok;4537;176.1;0.5;None;0;13.5;6.4;11.8;6.7;1.185;1.504;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015
+l_n_meas_rt;ok;4537;176.1;0.5;None;0;13.4;6.4;11.8;6.7;1.185;1.506;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015
+l_n_meas_rw10;nessun output;0;;;;;;;;;;;accelerometer_noise_density=0.06 gyroscope_noise_density=0.0015 accelerometer_random_walk=0.002 gyroscope_random_walk=0.0002
+l_n_mid;nessun output;0;;;;;;;;;;;accelerometer_noise_density=0.02 gyroscope_noise_density=0.0006
+l_v9;divergente;4085;176.1;678.16;94.6;33;;;;;;;
+l_v9_half;divergente;4537;176.1;9.71;94.6;0;;;;;;;
+l_v9_rt;divergente;4537;176.1;7.76;94.6;0;;;;;;;

@@ -1,0 +1,31 @@
+Setting printing level to: INFO
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_6dof_seg1/se3/config_v9/error_singlerun_01_relative_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_6dof_seg1/se3/config_v9/error_singlerun_02_relative_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_6dof_seg1/se3/config_v9/error_singlerun_03_normalized_estimation_error_squared.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_6dof_seg1/se3/config_v9/error_singlerun_04_imu_position_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_6dof_seg1/se3/config_v9/error_singlerun_05_imu_orientation_error.png
+[plot] /root/colcon_ws/src/open_vins/ov_data/sc_cantina01/OpenVINS_eval/results/batch3/batch3_6dof_seg1/se3/config_v9/error_singlerun_06_global_orientation_rpy_error.png
+======================================
+Absolute Trajectory Error
+======================================
+rmse_ori = 0.788 | rmse_pos = 0.014
+mean_ori = 0.690 | mean_pos = 0.013
+min_ori  = 0.040 | min_pos  = 0.001
+max_ori  = 1.930 | max_pos  = 0.037
+std_ori  = 0.380 | std_pos  = 0.006
+======================================
+Relative Pose Error
+======================================
+seg 0.95 - median_ori = 0.675 | median_pos = 0.018 (2085 samples)
+seg 1.9 - median_ori = 0.850 | median_pos = 0.020 (1871 samples)
+seg 2.9 - median_ori = 1.075 | median_pos = 0.018 (1687 samples)
+seg 3.8 - median_ori = 1.080 | median_pos = 0.018 (1565 samples)
+seg 4.8 - median_ori = 0.818 | median_pos = 0.019 (1394 samples)
+======================================
+Normalized Estimation Error Squared
+======================================
+mean_ori = 144.148 | mean_pos = 0.076
+min_ori  = 0.433 | min_pos  = 0.000
+max_ori  = 1788.222 | max_pos  = 0.516
+std_ori  = 262.390 | std_pos  = 0.081
+======================================
